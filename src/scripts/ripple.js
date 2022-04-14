@@ -1,4 +1,4 @@
-const rippleContainers = document.querySelectorAll(".ui-button-primary") || [];
+const primaryButtons = document.querySelectorAll(".ui-button-primary") || [];
 
 class RippleStyleAttributes {
   constructor(width, height, posX, posY) {
@@ -9,12 +9,12 @@ class RippleStyleAttributes {
   }
 }
 
-rippleContainers.forEach((ripplecontainer) => {
-  const tag = rippleContainer.querySelector(".ui-button-primary__ripple");
+primaryButtons.forEach((primaryButton) => {
+  const tag = primaryButton.querySelector(".ui-button-primary__ripple");
 
   if (!tag) return;
 
-  ripplecontainer.addEventListener("click", function (ev) {
+  primaryButton.addEventListener("click", function (ev) {
     let pos = this.getBoundingClientRect();
     let width = this.offsetWidth;
     let height = this.offsetHeight;
