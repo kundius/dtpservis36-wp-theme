@@ -144,6 +144,65 @@ Template Name: Главная
             </div>
           </div>
         </section>
+
+        <section class="reviews">
+          <div class="ui-container">
+            <div class="reviews__layout">
+              <div class="reviews__layout-content">
+                <div class="reviews-preview">
+                  <div class="reviews-preview__content">
+                    <div class="reviews-preview__content-text">
+                      <p>
+                        Попал в ДТП в январе 2021.
+                      </p>
+                      <p>
+                        Были пострадавшие, поэтому изначально все бумаги были оформлены должным образом. Суд признал второго водителя виновником. В июне подал в страховую документы...
+                      </p>
+                    </div>
+                  </div>
+                  <div class="reviews-preview__figure">
+                    <div class="reviews-preview__figure-image">
+                      <img src="/" alt="" />
+                    </div>
+                    <div class="reviews-preview__figure-more">
+                      <a href="#" class="reviews-preview__more">
+                        Читать отзыв полностью
+                        <span class="reviews-preview__more-arrow"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__layout-info">
+                <div class="reviews-info__title">
+                  Отзывы<br />
+                  наших клиентов
+                </div>
+                <div class="reviews-info__date">
+                  12.08.2021
+                </div>
+                <div class="reviews-info__group">
+                  <div class="reviews-info__name">
+                    Имя, от кого отзыв
+                  </div>
+                  <div class="reviews-info__desc">
+                    Оценка ущерба при ДТП
+                  </div>
+                </div>
+                <div class="reviews-info__nav">
+                  <button class="reviews-info__nav-left"></button>
+                  <button class="reviews-info__nav-right"></button>
+                </div>
+                <div class="reviews-info__send">
+                  <button class="ui-button-primary">
+                    Добавиьте свой отзыв
+                    <span class="ui-button-primary__plus"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       <?php get_template_part('partials/footer') ?>
