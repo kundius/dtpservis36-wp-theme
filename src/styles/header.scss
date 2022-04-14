@@ -80,6 +80,8 @@
   line-height: 48px;
   text-transform: uppercase;
   position: relative;
+  display: block;
+  text-decoration: none;
 }
 
 .header__menu li a::after {
@@ -110,10 +112,11 @@
   font-size: 20px;
   line-height: 1;
   color: #161718;
+  text-decoration: none;
 }
 
 .header__phone-time {
-  font-size: 22px;
+  font-size: 11px;
   line-height: 1;
   letter-spacing: 0.05em;
 }

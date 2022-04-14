@@ -44,7 +44,7 @@ export const scriptsTask = () => {
         mode: PRODUCTION ? "production" : "development",
         devtool: !PRODUCTION ? "inline-source-map" : false,
         output: {
-          filename: '[name].js'
+          filename: "[name].js",
         },
       })
     )
@@ -57,6 +57,10 @@ export const imagesTask = () => {
     .pipe(dest("dist/images"));
 };
 
+export const fontsTask = () => {
+  return src("src/fonts/**/*.{ttf,woff,eot}").pipe(dest("dist/fonts"));
+};
+
 export const cleanTask = () => del(["dist"]);
 
 export const watchTask = () => {
@@ -65,6 +69,7 @@ export const watchTask = () => {
     "src/images/**/*.{jpg,jpeg,png,svg,gif}",
     series(imagesTask, reloadTask)
   );
+  watch("src/fonts/**/*.{ttf,woff,eot}", series(fontsTask, reloadTask));
   watch("src/scripts/**/*.js", series(scriptsTask, reloadTask));
   watch("**/*.php", reloadTask);
 };
@@ -72,7 +77,7 @@ export const watchTask = () => {
 export const serveTask = (done) => {
   server.init({
     proxy: "127.0.0.1:5001",
-    port: 4001
+    port: 4001,
   });
   done();
 };
@@ -84,14 +89,14 @@ export const reloadTask = (done) => {
 
 export const dev = series(
   cleanTask,
-  parallel(stylesTask, imagesTask, scriptsTask),
+  parallel(stylesTask, imagesTask, fontsTask, scriptsTask),
   serveTask,
   watchTask
 );
 
 export const build = series(
   cleanTask,
-  parallel(stylesTask, imagesTask, scriptsTask)
+  parallel(stylesTask, imagesTask, fontsTask, scriptsTask)
 );
 
 export default dev;
