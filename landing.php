@@ -124,16 +124,24 @@ Template Name: Главная
         </section>
 
         <section class="why-we">
-          <div class="ui-container why-we__container">
-            <div class="why-we__title">Почему мы</div>
-            <div class="why-we__desc">
-              За время плодотворной работы мы заслужили репутацию надежных экспертов во всем Воронеже.
+          <div class="ui-container">
+            <div class="why-we__layout">
+              <div class="why-we__layout-title">
+                <div class="why-we__title">Почему мы</div>
+              </div>
+              <div class="why-we__layout-desc">
+                <div class="why-we__desc">
+                  За время плодотворной работы мы заслужили репутацию надежных экспертов во всем Воронеже.
+                </div>
+              </div>
+              <div class="why-we__layout-items">
+                <ul class="why-we__items">
+                  <li>20 лет работы</li>
+                  <li>Профессионалы комиссары</li>
+                  <li>Более 10 000 оформлений</li>
+                </ul>
+              </div>
             </div>
-            <ul class="why-we__items">
-              <li>20 лет работы</li>
-              <li>Профессионалы комиссары</li>
-              <li>Более 10 000 оформлений</li>
-            </ul>
           </div>
         </section>
       </div>
