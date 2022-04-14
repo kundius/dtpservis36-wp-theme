@@ -14,14 +14,14 @@
     opacity: 1;
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-25%);
     opacity: 0;
   }
 }
 
 @keyframes animationIn {
   0% {
-    transform: translateX(100%);
+    transform: translateX(25%);
     opacity: 0;
   }
   100% {
@@ -89,7 +89,7 @@
   height: 112px;
   margin-top: 16px;
   margin-bottom: 16px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .reviews-info__name {
