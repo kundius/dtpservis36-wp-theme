@@ -7,14 +7,30 @@ function init (wrapper, reviews) {
   const content = wrapper.querySelector('.reviews-preview__content')
   const image = wrapper.querySelector('.reviews-preview__figure-image')
 
+  let duration = 500
   let active = 0
+  let timer
 
   const renderReview = (index) => {
-    name.innerHTML = reviews[index].name
-    description.innerHTML = reviews[index].description
-    date.innerHTML = reviews[index].date
-    content.innerHTML = reviews[index].excerpt
-    image.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
+    wrapper.classList.add('reviews_animation-out')
+    if (timer) {
+      clearTimeout(timer)
+    }
+    timer = setTimeout(() => {
+      name.innerHTML = reviews[index].name
+      description.innerHTML = reviews[index].description
+      date.innerHTML = reviews[index].date
+      content.innerHTML = reviews[index].excerpt
+      image.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
+      wrapper.classList.remove('reviews_animation-out')
+      wrapper.classList.add('reviews_animation-in')
+      if (timer) {
+        clearTimeout(timer)
+      }
+      timer = setTimeout(() => {
+        wrapper.classList.remove('reviews_animation-in')
+      }, duration)
+    }, duration)
   }
 
   buttonLeft.addEventListener('click', () => {

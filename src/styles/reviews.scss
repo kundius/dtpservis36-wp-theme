@@ -8,6 +8,14 @@
   padding-bottom: 40px;
 }
 
+.reviews_animation-out {
+
+}
+
+.reviews_animation-in {
+  
+}
+
 .reviews::before {
   content: '';
   position: absolute;
@@ -155,7 +163,11 @@
   overflow: hidden;
 }
 
-.reviews-preview__content {
+.reviews-preview__video {
+  
+}
+
+.reviews-preview__excerpt {
   font-size: 18px;
   line-height: 24px;
   color: #252525;
