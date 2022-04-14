@@ -154,17 +154,12 @@ Template Name: Главная
                 <div class="reviews-preview">
                   <div class="reviews-preview__content">
                     <div class="reviews-preview__content-text">
-                      <p>
-                        Попал в ДТП в январе 2021.
-                      </p>
-                      <p>
-                        Были пострадавшие, поэтому изначально все бумаги были оформлены должным образом. Суд признал второго водителя виновником. В июне подал в страховую документы...
-                      </p>
+                    <?php echo $reviews[0]['excerpt'] ?>
                     </div>
                   </div>
                   <div class="reviews-preview__figure">
                     <div class="reviews-preview__figure-image">
-                      <img src="/" alt="" />
+                      <img src="<?php echo $reviews[0]['image']['url'] ?>" alt="" />
                     </div>
                     <div class="reviews-preview__figure-more">
                       <a href="#" class="reviews-preview__more">
@@ -182,14 +177,14 @@ Template Name: Главная
                 </div>
                 <?php endif; ?>
                 <div class="reviews-info__date">
-                  12.08.2021
+                  <?php echo $reviews[0]['date'] ?>
                 </div>
                 <div class="reviews-info__group">
                   <div class="reviews-info__name">
-                    Имя, от кого отзыв
+                    <?php echo $reviews[0]['name'] ?>
                   </div>
                   <div class="reviews-info__desc">
-                    Оценка ущерба при ДТП
+                    <?php echo $reviews[0]['description'] ?>
                   </div>
                 </div>
                 <div class="reviews-info__nav">
