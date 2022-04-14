@@ -1,78 +1,5 @@
 @import 'responsive';
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&display=swap');
-
-@keyframes buttonGlare {
-  0% {
-      left: -30px;
-      margin-left:0
-  }
-  30% {
-      left: 110%;
-      margin-left: 80px
-  }
-  100% {
-      left:110%;
-      margin-left: 80px
-  }
-}
-
-@keyframes rotation {
-  0% { transform: rotate(0deg) }
-  100% { transform: rotate(360deg) }
-}
-
-
-@keyframes loaderSquareFirst {
-  0%{ transform: translate(0, 0) rotateX(0) rotateY(0)}
-  25%{ transform: translate(100%, 0) rotateX(0) rotateY(180deg)}
-  50%{ transform: translate(100%, 100%) rotateX(-180deg) rotateY(180deg)}
-  75%{ transform: translate(0, 100%) rotateX(-180deg) rotateY(360deg)}
-  100%{ transform:  translate(0, 0) rotateX(0) rotateY(360deg) }
-}
-
-@keyframes loaderSquareSecond {
-  0% { box-shadow: 0 0.5em rgba(#fff, 0), 0.5em 0.5em rgba(#fff, 0), 0.5em 1em rgba(#fff, 0), 0px 1em rgba(#fff, 0) }
-  12% { box-shadow: 0 0.5em rgba(#fff, 1), 0.5em 0.5em rgba(#fff, 0), 0.5em 1em rgba(#fff, 0), 0px 1em rgba(#fff, 0) }
-  25% { box-shadow: 0 0.5em rgba(#fff, 1), 0.5em 0.5em rgba(#fff, 1), 0.5em 1em rgba(#fff, 0), 0px 1em rgba(#fff, 0) }
-  37% { box-shadow: 0 0.5em rgba(#fff, 1), 0.5em 0.5em rgba(#fff, 1), 0.5em 1em rgba(#fff, 1), 0px 1em rgba(#fff, 0) }
-  50% { box-shadow: 0 0.5em rgba(#fff, 1), 0.5em 0.5em rgba(#fff, 1), 0.5em 1em rgba(#fff, 1), 0px 1em rgba(#fff, 1) }
-  62% { box-shadow: 0 0.5em rgba(#fff, 0), 0.5em 0.5em rgba(#fff, 1), 0.5em 1em rgba(#fff, 1), 0px 1em rgba(#fff, 1) }
-  75% { box-shadow: 0 0.5em rgba(#fff, 0), 0.5em 0.5em rgba(#fff, 0), 0.5em 1em rgba(#fff, 1), 0px 1em rgba(#fff, 1) }
-  87%{ box-shadow: 0 0.5em rgba(#fff, 0), 0.5em 0.5em rgba(#fff, 0), 0.5em 1em rgba(#fff, 0), 0px 1em rgba(#fff, 1) }
-  100%{ box-shadow: 0 0.5em rgba(#fff, 0), 0.5em 0.5em rgba(#fff, 0), 0.5em 1em rgba(#fff, 0), 0px 1em rgba(#fff, 0) }
-}
-
-.ui-loader-square {
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  position: relative;
-  transform: rotate(45deg);
-}
-
-.ui-loader-square::before {
-  content: "";
-  width: 0.5em;
-  height: 0.5em;
-  position: absolute;
-  left: 0;
-  top: -0.5em;
-  animation: loaderSquareSecond 4s ease infinite;
-}
-
-.ui-loader-square::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0.5em;
-  height: 0.5em;
-  background: rgba(#fff, 0.85);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  animation: loaderSquareFirst 2s ease infinite;
-}
-
 *,
 *::before,
 *::after {
@@ -80,7 +7,7 @@
 }
 
 body {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Panton', sans-serif;
 }
 
 .ui-wrapper {
@@ -95,6 +22,10 @@ body {
   width: 1320px;
   max-width: 100%;
   box-sizing: border-box;
+
+  &_large {
+    width: 1490px;
+  }
 
   @include below(lg) {
     padding-left: 16px;
