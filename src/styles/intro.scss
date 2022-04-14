@@ -1,7 +1,7 @@
 .intro {
   background: #ffffff url('../images/bg-intro.jpg') no-repeat 50% 0;
   padding-top: 35px;
-  padding-bottom: 52px;
+  padding-bottom: 55px;
 }
 
 .intro-special {
@@ -63,7 +63,8 @@
   font-size: 48px;
   letter-spacing: 0.05em;
   white-space: nowrap;
-  margin: 0 -100px;
+  margin: 0 -100px 30px;
+  color: #807a74;
 
   span {
     font-size: 60px;
@@ -113,7 +114,7 @@
 .intro-advantages {
   display: flex;
   justify-content: space-between;
-  margin-top: 42px;
+  margin-top: 44px;
 }
 
 .intro-advantages__item {
@@ -124,11 +125,11 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
-    height: 100%;
+    top: -1px;
+    bottom: -3px;
     width: 23px;
     background-color: rgb(255, 136, 37);
-    break-before: 12px;
+    border-radius: 12px;
   }
 }
 
@@ -146,4 +147,5 @@
   line-height: 1;
   font-size: 18px;
   letter-spacing: 0.01em;
+  margin-top: 6px;
 }
