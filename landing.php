@@ -165,9 +165,7 @@ Template Name: Главная
                   </div>
 
                   <div class="reviews-preview__content">
-                    <div class="reviews-preview__content-text">
                     <?php echo $reviews[0]['excerpt'] ?>
-                    </div>
                   </div>
                 </div>
               </div>
