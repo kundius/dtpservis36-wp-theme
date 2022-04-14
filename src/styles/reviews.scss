@@ -110,13 +110,13 @@
 
   .reviews_animation-out & {
     animation: animationOut 300ms ease;
-    animation-duration: 100ms;
+    animation-delay: 100ms;
     animation-fill-mode: forwards;
   }
   
   .reviews_animation-in & {
     animation: animationIn 300ms ease;
-    animation-duration: 100ms;
+    animation-delay: 100ms;
     animation-fill-mode: forwards;
   }
 }
@@ -130,13 +130,13 @@
 
   .reviews_animation-out & {
     animation: animationOut 300ms ease;
-    animation-duration: 200ms;
+    animation-delay: 200ms;
     animation-fill-mode: forwards;
   }
   
   .reviews_animation-in & {
     animation: animationIn 300ms ease;
-    animation-duration: 200ms;
+    animation-delay: 200ms;
     animation-fill-mode: forwards;
   }
 }

@@ -14,9 +14,6 @@ function init (wrapper, reviews) {
 
   const renderReview = (index) => {
     wrapper.classList.add('reviews_animation-out')
-    // if (timer) {
-    //   clearTimeout(timer)
-    // }
     animating = true
     setTimeout(() => {
       name.innerHTML = reviews[index].name
@@ -26,9 +23,6 @@ function init (wrapper, reviews) {
       image.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
       wrapper.classList.remove('reviews_animation-out')
       wrapper.classList.add('reviews_animation-in')
-      // if (timer) {
-      //   clearTimeout(timer)
-      // }
       setTimeout(() => {
         wrapper.classList.remove('reviews_animation-in')
         animating = false
