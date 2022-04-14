@@ -10,9 +10,11 @@ class RippleStyleAttributes {
 }
 
 rippleContainers.forEach((ripplecontainer) => {
+  const tag = rippleContainer.querySelector(".ui-button-primary__ripple");
+
+  if (!tag) return;
+
   ripplecontainer.addEventListener("click", function (ev) {
-    let tag = document.createElement("span");
-    tag.className = "ui-button-primary__ripple";
     let pos = this.getBoundingClientRect();
     let width = this.offsetWidth;
     let height = this.offsetHeight;
@@ -23,6 +25,5 @@ rippleContainers.forEach((ripplecontainer) => {
     tag.style.height = rippleStyleAttr.height + "px";
     tag.style.top = rippleStyleAttr.top + "px";
     tag.style.left = rippleStyleAttr.left + "px";
-    this.appendChild(tag);
   });
 });
