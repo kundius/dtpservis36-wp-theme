@@ -152,20 +152,19 @@ Template Name: Главная
             <div class="reviews__layout">
               <div class="reviews__layout-content">
                 <div class="reviews-preview">
-                  <div class="reviews-preview__content">
-                    <div class="reviews-preview__content-text">
-                    <?php echo $reviews[0]['excerpt'] ?>
-                    </div>
-                  </div>
                   <div class="reviews-preview__figure">
-                    <div class="reviews-preview__figure-image">
-                      <img src="<?php echo $reviews[0]['image']['url'] ?>" alt="" />
-                    </div>
+                    <div class="reviews-preview__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
                     <div class="reviews-preview__figure-more">
                       <a href="#" class="reviews-preview__more">
                         Читать отзыв полностью
                         <span class="reviews-preview__more-arrow"></span>
                       </a>
+                    </div>
+                  </div>
+                  
+                  <div class="reviews-preview__content">
+                    <div class="reviews-preview__content-text">
+                    <?php echo $reviews[0]['excerpt'] ?>
                     </div>
                   </div>
                 </div>
