@@ -12,9 +12,15 @@ Template Name: Главная
     <?php wp_body_open();?>
 
     <div class="ui-wrapper">
-      <?php get_template_part('partials/header');?>
+      <?php get_template_part('partials/header') ?>
 
-      <?php get_template_part('partials/footer');?>
+      <section class="intro">
+        <div class="ui-container">
+          intro
+        </div>
+      </section>
+
+      <?php get_template_part('partials/footer') ?>
     </div>
   </body>
 </html>
