@@ -8,12 +8,34 @@
   padding-bottom: 40px;
 }
 
+@keyframes animationOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes animationIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .reviews_animation-out {
 
 }
 
 .reviews_animation-in {
-  
+
 }
 
 .reviews::before {
@@ -75,6 +97,14 @@
   font-size: 18px;
   line-height: 1;
   font-weight: bold;
+
+  .reviews_animation-out & {
+    animation: animationOut 500ms ease-in-out;
+  }
+  
+  .reviews_animation-in & {
+    animation: animationIn 500ms ease-in-out;
+  }
 }
 
 .reviews-info__desc {
