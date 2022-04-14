@@ -43,7 +43,7 @@ Template Name: Главная
               <div class="intro-form__submit">
                 <button class="ui-button-primary" type="button">
                   Вызвать комиссара
-                  <span class="ui-button-primary__ripple"></span>
+                  <!-- <span class="ui-button-primary__ripple"></span> -->
                 </button>
               </div>
             </form>
