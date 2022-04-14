@@ -1,11 +1,11 @@
 .intro {
   background: #ffffff url('../images/bg-intro.jpg') no-repeat 50% 0;
-  padding-top: 32px;
+  padding-top: 35px;
   padding-bottom: 52px;
 }
 
 .intro-special {
-
+  margin-bottom: 61px;
 }
 
 .intro-special__title {
@@ -24,17 +24,23 @@
   line-height: 1;
   text-align: center;
   color: #010101;
-  margin-bottom: 32px;
+  margin-top: 9px;
 
   span {
     background: #eff500;
     padding: 0 6px;
     border-radius: 12px;
+    display: inline-block;
+    line-height: 24px;
   }
 }
 
 .intro__body {
-  background-color: rgba(215, 215, 215, 0.2);
+  background-color: rgba(215,215,215,.2);
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro-form {
@@ -45,6 +51,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 460px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .intro-form__title {
@@ -54,13 +63,14 @@
   font-size: 48px;
   letter-spacing: 0.05em;
   white-space: nowrap;
-  margin: 0 -50px;
+  margin: 0 -100px;
 
   span {
     font-size: 60px;
     color: #818181;
     letter-spacing: 0.1em;
     display: block;
+    margin-bottom: 8px;
   }
 }
 
@@ -76,10 +86,18 @@
 
 .intro-form__input {
   margin-top: 45px;
+  width: 360px;
+  .ui-input-phone {
+    width: 100%;
+  }
 }
 
 .intro-form__submit {
   margin-top: 18px;
+  width: 360px;
+  .ui-button-primary {
+    width: 100%;
+  }
 }
 
 .intro__urgent {
@@ -88,7 +106,7 @@
   font-weight: bold;
   letter-spacing: 0.05em;
   line-height: 1;
-  padding: 20px 0;
+  padding: 33px 0 40px;
   color: #969696;
 }
 
