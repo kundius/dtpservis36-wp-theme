@@ -1,5 +1,5 @@
 .why-we {
-  padding-top: 140px;
+  padding-top: 145px;
   padding-bottom: 80px;
 }
 
@@ -14,11 +14,16 @@
 .why-we__layout-title {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
+  padding-top: 11px;
 }
 
 .why-we__layout-desc {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  width: 535px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 28px;
 }
 
 .why-we__layout-items {
@@ -47,8 +52,7 @@
   line-height: 30px;
   letter-spacing: 0.01em;
   color: #343434;
-  margin-left: 160px;
-  margin-top: 20px;
+  max-width: 380px;
 }
 
 .why-we__items {
@@ -67,6 +71,7 @@
 
 .why-we__items li + li {
   margin-left: 40px;
+  margin-top: 58px;
 }
 
 .why-we__items li + li + li {
@@ -85,5 +90,5 @@
   background: #ff8825;
   border-radius: 50%;
   left: 0;
-  top: 10px;
+  top: 9px;
 }
