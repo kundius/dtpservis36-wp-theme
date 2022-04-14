@@ -8,6 +8,7 @@ import "./form";
 import "./drawer";
 import "./menuScrollTo";
 import "./inputFile";
+import "./ripple";
 
 /**
  * LazySizes configuration

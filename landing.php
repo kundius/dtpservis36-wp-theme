@@ -41,7 +41,9 @@ Template Name: Главная
                 </label>
               </div>
               <div class="intro-form__submit">
-                <button class="ui-button-primary">Вызвать комиссара</button>
+                <button class="ui-button-primary">
+                  Вызвать комиссара
+                </button>
               </div>
             </form>
 
