@@ -146,7 +146,9 @@ Template Name: Главная
         </section>
 
         <?php $reviews = get_field('theme_reviews_items', 'options') ?>
-        <?php print_r($reviews) ?>
+        <script>
+          var theme_reviews = <?php echo json_encode($reviews) ?>;
+        </script>
         <section class="reviews">
           <div class="ui-container">
             <div class="reviews__layout">
