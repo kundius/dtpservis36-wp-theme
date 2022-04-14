@@ -36,7 +36,13 @@ Template Name: Главная
               </div>
               <div class="intro-form__input">
                 <label class="ui-input-phone">
-                  <input type="text" class="ui-input-phone__input" name="your-phone" data-inputmask="'mask': '+7 (999) 999-99-99'" />
+                  <input
+                    type="text"
+                    class="ui-input-phone__input"
+                    name="your-phone"
+                    data-inputmask="'mask': '+7 (999) 999-99-99'"
+                    placeholder="+7 (___) ___-__-__"
+                  />
                   <span class="ui-input-phone__label">Введите ваш номер телефона</span>
                 </label>
               </div>
