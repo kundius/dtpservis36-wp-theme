@@ -64,7 +64,7 @@
   letter-spacing: 0.05em;
   white-space: nowrap;
   margin: 0 -100px 30px;
-  color: #807a74;
+  color: #9a9590;
 
   span {
     font-size: 60px;
@@ -88,6 +88,7 @@
 .intro-form__input {
   margin-top: 45px;
   width: 360px;
+  
   .ui-input-phone {
     width: 100%;
   }
@@ -96,8 +97,22 @@
 .intro-form__submit {
   margin-top: 18px;
   width: 360px;
+  position: relative;
+  
   .ui-button-primary {
     width: 100%;
+  }
+
+  &::before {
+    content: '';
+    right: 0;
+    top: 0;
+    background: url('../images/icon-call.svg') no-repeat 50% 50%;
+    background-size: cover;
+    width: 41px;
+    height: 42px;
+    position: absolute;
+    display: block;
   }
 }
 
