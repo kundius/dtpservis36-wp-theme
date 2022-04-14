@@ -1,0 +1,131 @@
+.intro {
+  background: #ffffff url('../images/bg-intro.jpg') no-repeat 50% 0;
+  padding-top: 32px;
+  padding-bottom: 52px;
+}
+
+.intro-special {
+
+}
+
+.intro-special__title {
+  font-size: 16px;
+  color: #818181;
+  letter-spacing: 0.160em;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+
+.intro-special__desc {
+  font-size: 16px;
+  letter-spacing: 0.160em;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: #010101;
+  margin-bottom: 32px;
+
+  span {
+    background: #eff500;
+    padding: 0 6px;
+    border-radius: 12px;
+  }
+}
+
+.intro__body {
+  background-color: rgba(215, 215, 215, 0.2);
+}
+
+.intro-form {
+  margin-top: -20px;
+  border-radius: 64px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-form__title {
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  margin: 0 -50px;
+
+  span {
+    font-size: 60px;
+    color: #818181;
+    letter-spacing: 0.1em;
+    display: block;
+  }
+}
+
+.intro-form__desc {
+  color: #fb8624;
+  font-size: 23px;
+  letter-spacing: 0.075em;
+  line-height: 30px;
+  padding: 0 18px;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+.intro-form__input {
+  margin-top: 45px;
+}
+
+.intro-form__submit {
+  margin-top: 18px;
+}
+
+.intro__urgent {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  padding: 20px 0;
+  color: #969696;
+}
+
+.intro-advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+}
+
+.intro-advantages__item {
+  position: relative;
+  padding-left: 43px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 23px;
+    background-color: rgb(255, 136, 37);
+    break-before: 12px;
+  }
+}
+
+.intro-advantages__item-title {
+  font-weight: bold;
+  color: #ff8825;
+  line-height: 1;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.intro-advantages__item-desc {
+  font-weight: bold;
+  color: #010101;
+  line-height: 1;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
