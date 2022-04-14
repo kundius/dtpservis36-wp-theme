@@ -14,14 +14,14 @@
     opacity: 1;
   }
   100% {
-    transform: translateX(-25%);
+    transform: translateX(-20px);
     opacity: 0;
   }
 }
 
 @keyframes animationIn {
   0% {
-    transform: translateX(25%);
+    transform: translateX(20px);
     opacity: 0;
   }
   100% {
@@ -99,11 +99,11 @@
   font-weight: bold;
 
   .reviews_animation-out & {
-    animation: animationOut 500ms ease-in-out;
+    animation: animationOut 500ms ease;
   }
   
   .reviews_animation-in & {
-    animation: animationIn 500ms ease-in-out;
+    animation: animationIn 500ms ease;
   }
 }
 
@@ -113,6 +113,16 @@
   letter-spacing: 0.025em;
   color: #3a3a3a;
   margin-top: 7px;
+
+  .reviews_animation-out & {
+    animation: animationOut 500ms ease;
+    animation-delay: 100ms;
+  }
+  
+  .reviews_animation-in & {
+    animation: animationIn 500ms ease;
+    animation-delay: 100ms;
+  }
 }
 
 .reviews-info__nav {
