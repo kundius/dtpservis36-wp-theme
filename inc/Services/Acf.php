@@ -55,41 +55,6 @@ class Acf implements Service
 
     public function register_acf_fields(): void
     {
-        \acf_add_local_field_group([
-            'key' => 'group_theme_reviews',
-            'title' => 'Отзывы',
-            'fields' => [
-                [
-                    'key' => 'group_theme_reviews_tab',
-                    'label' => 'Отзывы',
-                    'name' => 'theme_reviews_tab',
-                    'type' => 'tab',
-                ],
-                [
-                    'key' => 'group_theme_reviews',
-                    'label' => 'Отзывы',
-                    'name' => 'theme_reviews',
-                    'type' => 'group',
-                    'fields' => [
-                        [
-                            'key' => 'group_theme_reviews_title',
-                            'label' => 'Заголовок',
-                            'name' => 'theme_reviews_title',
-                            'type' => 'text',
-                        ]
-                    ],
-                ],
-            ],
-            'location' => [
-                [
-                    [
-                        'param' => 'options_page',
-                        'operator' => '==',
-                        'value' => 'acf-options',
-                    ],
-                ],
-            ],
-        ]);
     }
 
 }
