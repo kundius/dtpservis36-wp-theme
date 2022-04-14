@@ -9,6 +9,7 @@ import "./drawer";
 import "./menuScrollTo";
 import "./inputFile";
 import "./ripple";
+import "./inputMask";
 
 /**
  * LazySizes configuration

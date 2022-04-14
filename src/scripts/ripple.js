@@ -9,10 +9,10 @@ class RippleStyleAttributes {
 
 function initForClassName(className) {
   const duration = 800
-  const primaryButtons = document.querySelectorAll(`.${className}`) || [];
+  const buttons = document.querySelectorAll(`.${className}`) || [];
 
-  primaryButtons.forEach((primaryButton) => {
-    primaryButton.addEventListener("click", function (ev) {
+  buttons.forEach((button) => {
+    button.addEventListener("click", function (ev) {
       let tag = document.createElement("span");
       tag.classList.add(`${className}__ripple`)
       let pos = this.getBoundingClientRect();

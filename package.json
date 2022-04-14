@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "hystmodal": "^0.5.1",
+    "inputmask": "^5.0.7",
     "lazysizes": "^5.3.2",
     "normalize.css": "^8.0.1",
     "what-input": "^5.2.10"
