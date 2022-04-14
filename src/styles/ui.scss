@@ -110,7 +110,7 @@ body {
 .ui-button-primary .ui-button-primary__ripple {
   position: absolute;
   border-radius: 100%;
-  animation: ripple 0.8s;
+  // animation: ripple 0.8s;
   transform: scale(0);
   background: rgba(0, 0, 0, .2);
 }

@@ -8,6 +8,8 @@ class RippleStyleAttributes {
 }
 
 function initForClassName(className) {
+  let timer
+  const duration = 800
   const primaryButtons = document.querySelectorAll(`.${className}`) || [];
 
   primaryButtons.forEach((primaryButton) => {
@@ -31,6 +33,13 @@ function initForClassName(className) {
       tag.style.height = rippleStyleAttr.height + "px";
       tag.style.top = rippleStyleAttr.top + "px";
       tag.style.left = rippleStyleAttr.left + "px";
+      tag.style.animation = `ripple ${duration}ms`;
+      if (timer) {
+        clearTimeout(timer)
+      }
+      timer = setTimeout(() => {
+        tag.style.animation = null
+      }, duration)
     });
   });
 }
