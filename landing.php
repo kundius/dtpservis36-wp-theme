@@ -87,6 +87,43 @@ Template Name: Главная
         </div>
       </section>
 
+      <div class="section-for-bg">
+        <section class="additional">
+          <div class="ui-container">
+            <div class="additional__title">Кроме того, выполняем:</div>
+            <div class="additional__grid">
+              <div class="additional__grid-cell">
+                <div class="additional-item">
+                  <div class="additional-item__number">1</div>
+                  <div class="additional-item__title">Бесплатная консультация</div>
+                  <div class="additional-item__image">
+                    <img src="<?php bloginfo('template_url') ?>/dist/images/additional-1.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="additional__grid-cell">
+                <div class="additional-item">
+                  <div class="additional-item__number">2</div>
+                  <div class="additional-item__title">Юридическое сопровождение</div>
+                  <div class="additional-item__image">
+                    <img src="<?php bloginfo('template_url') ?>/dist/images/additional-2.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="additional__grid-cell">
+                <div class="additional-item">
+                  <div class="additional-item__number">3</div>
+                  <div class="additional-item__title">Оценка ущерба</div>
+                  <div class="additional-item__image">
+                    <img src="<?php bloginfo('template_url') ?>/dist/images/additional-3.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <?php get_template_part('partials/footer') ?>
     </div>
   </body>
