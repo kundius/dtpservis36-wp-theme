@@ -122,6 +122,20 @@ Template Name: Главная
             </div>
           </div>
         </section>
+
+        <section class="why-we">
+          <div class="ui-container why-we__container">
+            <div class="why-we__title">Почему мы</div>
+            <div class="why-we__desc">
+              За время плодотворной работы мы заслужили репутацию надежных экспертов во всем Воронеже.
+            </div>
+            <ul class="why-we__items">
+              <li>20 лет работы</li>
+              <li>Профессионалы комиссары</li>
+              <li>Более 10 000 оформлений</li>
+            </ul>
+          </div>
+        </section>
       </div>
 
       <?php get_template_part('partials/footer') ?>
