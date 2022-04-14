@@ -146,14 +146,17 @@
   border-radius: 64px;
   background-color: rgba(255, 255, 255, 0.961);
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.21);
+  padding: 50px 65px;
 }
 
 .reviews-preview__content {
-
+  max-width: 300px;
 }
 
 .reviews-preview__content-text {
-
+  font-size: 18px;
+  line-height: 24px;
+  color: #252525;
 }
 
 .reviews-preview__figure {

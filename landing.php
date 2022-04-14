@@ -145,6 +145,8 @@ Template Name: Главная
           </div>
         </section>
 
+        <?php $reviews = get_field('theme_reviews_items', 'options') ?>
+        <?php print_r($reviews) ?>
         <section class="reviews">
           <div class="ui-container">
             <div class="reviews__layout">
@@ -174,10 +176,11 @@ Template Name: Главная
                 </div>
               </div>
               <div class="reviews__layout-info">
+                <?php if ($title = get_field('theme_reviews_title', 'options')): ?>
                 <div class="reviews-info__title">
-                  Отзывы<br />
-                  наших клиентов
+                  <?php echo $title ?>
                 </div>
+                <?php endif; ?>
                 <div class="reviews-info__date">
                   12.08.2021
                 </div>
