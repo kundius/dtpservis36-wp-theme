@@ -156,12 +156,12 @@ Template Name: Главная
                     <div class="reviews-preview__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
                     <div class="reviews-preview__figure-more">
                       <a href="#" class="reviews-preview__more">
-                        Читать отзыв полностью
+                        читать отзыв полностью
                         <span class="reviews-preview__more-arrow"></span>
                       </a>
                     </div>
                   </div>
-                  
+
                   <div class="reviews-preview__content">
                     <div class="reviews-preview__content-text">
                     <?php echo $reviews[0]['excerpt'] ?>
