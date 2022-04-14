@@ -35,10 +35,10 @@ Template Name: Главная
                 Служба аварийных комиссаров
               </div>
               <div class="intro-form__input">
-                <div class="ui-input-phone">
-                  <div class="ui-input-phone__label">Введите ваш номер телефона</div>
+                <label class="ui-input-phone">
                   <input type="text" class="ui-input-phone__input" name="your-phone" />
-                </div>
+                  <span class="ui-input-phone__label">Введите ваш номер телефона</span>
+                </label>
               </div>
               <div class="intro-form__submit">
                 <button class="ui-button-primary">Вызвать комиссара</button>
