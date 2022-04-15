@@ -103,6 +103,7 @@
   line-height: 16px;
   color: #666;
   letter-spacing: 0.05em;
+  width: 360px;
 }
 
 .footer__copyright span {
@@ -124,15 +125,15 @@
 
 .footer__links {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footer__links li {
-  
+.footer__links li + li {
+  margin-top: 16px;
 }
 
 .footer__links li a {
@@ -152,17 +153,26 @@
 }
 
 .footer__counters {
-
+  width: 360px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.footer__counters-item {
-
-}
-
-.footer__counters-item {
-
+.footer__counters-item + .footer__counters-item {
+  margin-left: 40px;
 }
 
 .footer-creator {
+  display: inline-block;
+  opacity: 0.8;
+}
 
+.footer-creator:hover {
+  display: inline-block;
+  opacity: 1;
+}
+
+.footer-creator img {
+  display: block;
 }
