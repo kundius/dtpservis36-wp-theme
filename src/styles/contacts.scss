@@ -7,6 +7,17 @@
   z-index: 200;
 }
 
+.section-contacts__bg-pattern {
+  position: absolute;
+  width: 640px;
+  height: 760px;
+  background-color: rgba(250, 241, 236, 0.502);
+  top: 0;
+  left: 50%;
+  transform: skew(20deg);
+  z-index: 2;
+}
+
 .section-contacts::before {
   content: '';
   display: block;
