@@ -179,24 +179,6 @@ Template Name: Главная
                     </div>
                   </div>
                 </div>
-                
-                <div class="reviews-details">
-                  <button class="reviews-details__close"></button>
-                  <div class="reviews-details__figure">
-                    <div class="reviews-details__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
-                  </div>
-                  <div class="reviews-details__content">
-                    <div
-                      class="reviews-details__content-video"
-                      style="display: <?php echo ($reviews[0]['video'] ? 'block' : 'none') ?>"
-                    >
-                      <?php echo $reviews[0]['video'] ?>
-                    </div>
-                    <div class="reviews-details__content-text">
-                      <?php echo $reviews[0]['content'] ?>
-                    </div>
-                  </div>
-                </div>
               
               </div>
 
@@ -231,6 +213,24 @@ Template Name: Главная
             </div>
           </div>
         </section>
+                
+        <div class="reviews-details">
+          <button class="reviews-details__close"></button>
+          <div class="reviews-details__figure">
+            <div class="reviews-details__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
+          </div>
+          <div class="reviews-details__content">
+            <div
+              class="reviews-details__content-video"
+              style="display: <?php echo ($reviews[0]['video'] ? 'block' : 'none') ?>"
+            >
+              <?php echo $reviews[0]['video'] ?>
+            </div>
+            <div class="reviews-details__content-text">
+              <?php echo $reviews[0]['content'] ?>
+            </div>
+          </div>
+        </div>
       </div>
       
       <?php $contacts = get_field('theme_contacts_items', 'options') ?>

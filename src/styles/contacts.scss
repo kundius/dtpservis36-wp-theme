@@ -9,11 +9,11 @@
 
 .section-contacts__bg-pattern {
   position: absolute;
-  width: 640px;
+  width: 560px;
   height: 760px;
   background-color: rgba(250, 241, 236, 0.502);
   top: 0;
-  left: 50%;
+  left: calc(50% + 80px);
   transform: skew(26deg);
   z-index: 2;
 

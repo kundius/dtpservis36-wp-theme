@@ -1,20 +1,21 @@
-function init (wrapper, reviews) {
-  const buttonMoreWrap = wrapper.querySelector('.reviews-preview__figure-more')
-  const buttonMore = wrapper.querySelector('.reviews-preview__more')
-  const buttonClose = wrapper.querySelector('.reviews-details__close')
-  const buttonLeft = wrapper.querySelector('.reviews-info__nav-left')
-  const buttonRight = wrapper.querySelector('.reviews-info__nav-right')
-  const name = wrapper.querySelector('.reviews-info__name')
-  const description = wrapper.querySelector('.reviews-info__desc')
-  const date = wrapper.querySelector('.reviews-info__date')
-  const previewExcerpt = wrapper.querySelector('.reviews-preview__content-text')
-  const previewImage = wrapper.querySelector('.reviews-preview__figure-image')
-  const previewVideo = wrapper.querySelector('.reviews-preview__content-video')
-  const previewWrap = wrapper.querySelector('.reviews-preview')
-  const detailsWrap = wrapper.querySelector('.reviews-details')
-  const detailsText = wrapper.querySelector('.reviews-details__content-text')
-  const detailsImage = wrapper.querySelector('.reviews-details__figure-image')
-  const detailsVideo = wrapper.querySelector('.reviews-details__content-video')
+function init (reviews) {
+  const wrapper = document.querySelector('.reviews')
+  const buttonMoreWrap = document.querySelector('.reviews-preview__figure-more')
+  const buttonMore = document.querySelector('.reviews-preview__more')
+  const buttonClose = document.querySelector('.reviews-details__close')
+  const buttonLeft = document.querySelector('.reviews-info__nav-left')
+  const buttonRight = document.querySelector('.reviews-info__nav-right')
+  const name = document.querySelector('.reviews-info__name')
+  const description = document.querySelector('.reviews-info__desc')
+  const date = document.querySelector('.reviews-info__date')
+  const previewExcerpt = document.querySelector('.reviews-preview__content-text')
+  const previewImage = document.querySelector('.reviews-preview__figure-image')
+  const previewVideo = document.querySelector('.reviews-preview__content-video')
+  const previewWrap = document.querySelector('.reviews-preview')
+  const detailsWrap = document.querySelector('.reviews-details')
+  const detailsText = document.querySelector('.reviews-details__content-text')
+  const detailsImage = document.querySelector('.reviews-details__figure-image')
+  const detailsVideo = document.querySelector('.reviews-details__content-video')
 
   let duration = 400
   let active = 0
@@ -94,7 +95,6 @@ function init (wrapper, reviews) {
   })
 }
 
-const wrapper = document.querySelector('.reviews')
-if (typeof theme_reviews !== 'undefined' && wrapper) {
-  init(wrapper, theme_reviews)
+if (typeof theme_reviews) {
+  init(theme_reviews)
 }
