@@ -11,12 +11,15 @@
         <li>
           <a href="#">Отзывы</a>
         </li>
-        <li>
+        <li class="_active">
           <a href="#">Контакты</a>
         </li>
       </ul>
 
-      <a href="tel:" class="footer__phone">+7 (950) 771-1-911</a>
+      <a href="tel:" class="footer__phone">
+        +7 (950) 771-1-911
+        <span class="footer__phone-icon"></span>
+      </a>
     </div>
     <div class="footer__secondary">
       <div class="footer__copyright">

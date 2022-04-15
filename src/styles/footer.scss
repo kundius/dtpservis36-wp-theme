@@ -15,47 +15,78 @@
   margin: 0;
   list-style: none;
   display: flex;
+}
 
-  li {
-    
-    a {
-      font-size: 14px;
-      font-weight: bold;
-      letter-spacing: 0.075em;
-      color: #707070;
-      display: block;
-      line-height: 22px;
-      position: relative;
-      display: inline-block;
-      padding: 0 10px;
-      border-radius: 11px;
+.footer__menu li + li {
+  margin-left: 15px;
+}
 
-      &:hover {
-        color: #000;
-      }
+.footer__menu li a {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+  color: #707070;
+  display: block;
+  line-height: 22px;
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 11px;
+  text-decoration: none;
+}
 
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 33px;
-        height: 8px;
-        background: #ff8a00;
-        border-radius: 3px;
-      }
-    }
-  }
+.footer__menu li a:hover {
+  color: #000;
+}
 
-  li + li {
-    margin-left: 15px;
-  }
+.footer__menu li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33px;
+  height: 8px;
+  background: #ff8a00;
+  border-radius: 3px;
+  display: none;
+}
+
+.footer__menu li a:hover::after {
+  display: block;
+}
+
+.footer__menu li._active a {
+  background: #ff8a00;
+  color: #fff;
+}
+
+.footer__menu li._active a::after {
+  display: none;
 }
 
 .footer__phone {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  letter-spacing: -0.005em;
+  color: #2e343c;
+  display: inline-block;
+  position: relative;
+  padding-right: 24px;
+}
 
+.footer__phone-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url('../images/icon-phone.png') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .footer__secondary {
