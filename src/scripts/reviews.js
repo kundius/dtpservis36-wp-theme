@@ -71,6 +71,8 @@ function init (wrapper, reviews) {
   buttonClose.addEventListener('click', () => {
     wrapper.classList.remove('reviews_show-details')
   })
+
+  renderReview(active)
 }
 
 const wrapper = document.querySelector('.reviews')
