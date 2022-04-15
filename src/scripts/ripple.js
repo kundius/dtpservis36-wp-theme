@@ -20,7 +20,6 @@ function initForClassName(className) {
       let height = this.offsetHeight;
       let posX = ev.pageX - window.pageXOffset - pos.left;
       let posY = ev.pageY - window.pageYOffset - pos.top;
-      console.log(ev.pageY, window.pageYOffset, pos.top)
       let rippleStyleAttr = new RippleStyleAttributes(
         width,
         height,
