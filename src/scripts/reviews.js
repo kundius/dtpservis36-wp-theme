@@ -6,6 +6,7 @@ function init (wrapper, reviews) {
   const date = wrapper.querySelector('.reviews-info__date')
   const excerpt = wrapper.querySelector('.reviews-preview__excerpt')
   const image = wrapper.querySelector('.reviews-preview__figure-image')
+  const video = wrapper.querySelector('.reviews-preview__video')
 
   let duration = 400
   let active = 0
@@ -19,6 +20,7 @@ function init (wrapper, reviews) {
       description.innerHTML = reviews[index].description
       date.innerHTML = reviews[index].date
       excerpt.innerHTML = reviews[index].excerpt
+      video.innerHTML = reviews[index].video
       image.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
       wrapper.classList.remove('reviews_animation-out')
       wrapper.classList.add('reviews_animation-in')
