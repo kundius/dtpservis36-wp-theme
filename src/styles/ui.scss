@@ -74,6 +74,23 @@ body {
   transition: .3s ease;
 }
 
+.ui-input-field__textarea {
+  width: 100%;
+  border: 3px solid #e3e3e3;
+  min-height: 72px;
+  background: #fff;
+  border-radius: 36px;
+  text-align: center;
+  padding: 0 20px;
+  color: #585858;
+  font-family: inherit;
+  font-size: 24px;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding-top: 25px;
+  transition: .3s ease;
+}
+
 .ui-input-field__input:focus {
   padding-top: 0;
   background: #f8f9fe;

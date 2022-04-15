@@ -66,26 +66,45 @@
               class="ui-input-field__input"
               name="your-name"
             />
-            <span class="ui-input-field__label">Введите ваше имя</span>
+            <span class="ui-input-field__label">Ваше имя</span>
           </label>
         </div>
 
         <div class="modal-form__field">
-          <input type="text" name="your-company" class="ui-input" placeholder="Компания:" />
+          <label class="ui-input-field">
+            <input
+              type="text"
+              class="ui-input-field__input"
+              name="your-date"
+            />
+            <span class="ui-input-field__label">Дата</span>
+          </label>
         </div>
 
         <div class="modal-form__field">
-          <span class="wpcf7-form-control-wrap your-phone">
-            <input type="tel" name="your-phone" value="" class="ui-input" placeholder="Телефон*">
+          <span class="wpcf7-form-control-wrap your-email">
+            <label class="ui-input-field">
+              <input
+                type="email"
+                class="ui-input-field__input"
+                name="your-email"
+              />
+              <span class="ui-input-field__label">Ваш e-mail*</span>
+            </label>
           </span>
         </div>
 
         <div class="modal-form__field">
-          <input type="email" name="your-email" class="ui-input" placeholder="E-mail:" />
-        </div>
-
-        <div class="modal-form__field">
-          <textarea rows="4" name="your-message" class="ui-textarea" placeholder="Техническое задание:"></textarea>
+          <span class="wpcf7-form-control-wrap your-message">
+            <label class="ui-input-field">
+              <textarea
+                rows="4"
+                name="your-message"
+                class="ui-input-field__textarea"
+              ></textarea>
+              <span class="ui-input-field__label">Ваш отзыв*</span>
+            </label>
+          </span>
         </div>
 
         <div class="modal-form__file">
@@ -107,18 +126,8 @@
           Поля, отмеченные *, обязательны для заполнения
         </div>
 
-        <div class="modal-form__rules">
-          <span class="wpcf7-form-acceptance-wrap">
-            <label class="ui-rules">
-              <input type="checkbox" name="rules" value="1" class="form-checkbox">
-              <span></span>
-              Прочитал(-а) <a href="<?php the_permalink(16) ?>" target="_blank">Пользовательское соглашение</a> и&nbsp;соглашаюсь с&nbsp;<a href="<?php the_permalink(3) ?>" target="_blank">Политикой конфиденциальности</a>
-            </label>
-          </span>
-        </div>
-
         <div class="modal-form__submit">
-          <button type="submit" class="ui-button-submit ui-button-submit_glare">
+          <button type="submit" class="ui-button-secondary">
             <span class="ui-loader-square modal-form__loader"></span>
             Отправить
           </button>
