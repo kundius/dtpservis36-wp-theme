@@ -357,6 +357,47 @@
   width: 100%;
 }
 
+.reviews-details__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  color: #b7b7b8;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  padding: 0;
+  background: transparent;
+
+  &::before {
+    content: '';
+    width: 5px;
+    height: 19px;
+    background: currentColor;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &::after {
+    content: '';
+    width: 5px;
+    height: 19px;
+    background: currentColor;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover {
+    color: #000;
+  }
+}
+
 .reviews-details__video {
   overflow: hidden;
   margin-bottom: 16px;

@@ -175,6 +175,7 @@ Template Name: Главная
                 </div>
                 
                 <div class="reviews-details">
+                  <button class="reviews-details__close"></button>
                   <div class="reviews-details__figure">
                     <div class="reviews-details__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
                   </div>
