@@ -6,15 +6,17 @@
   margin: 0 auto;
   max-width: 100%;
   padding: 51px 0 16px 0;
+  overflow: hidden;
 
   &::after {
     content: '';
     position: absolute;
-    right: 0;
+    right: -100px;
     top: 0;
     bottom: 0;
-    width: 200px;
-    background: rgba(255, 247, 251, 0.12);
+    width: 400px;
+    background: rgba(255,247,251,.12);
+    transform: skewX(20deg);
   }
 }
 
