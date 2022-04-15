@@ -239,31 +239,33 @@ Template Name: Главная
           <div class="section-contacts__title">Контакты</div>
 
           <div class="contacts-body">
-            <?php foreach ($contacts as $contact): ?>
-            <div class="contacts-group">
-              <div class="contacts-group__title">
-                <?php echo $contact['title'] ?>
-              </div>
-              <div class="contacts-group__address">
-                <?php echo $contact['address'] ?>
-              </div>
-              <div class="contacts-group__data">
-                <?php foreach ($contact['data'] as $data): ?>
-                <div class="contacts-group__data-item contacts-group__data-item_<?php echo $data['type'] ?>">
-                  <?php
-                    if ($data['type'] === 'email') {
-                      echo '<a href="mailto:' . $data['value'] . '">' . $data['value'] . '</a>';
-                    } else if ($data['type'] === 'phone') {
-                      echo '<a href="tel:' . $data['value'] . '">' . $data['value'] . '</a>';
-                    } else {
-                      echo $data['value'];
-                    }
-                  ?>
+            <div class="contacts-body__groups">
+              <?php foreach ($contacts as $contact): ?>
+              <div class="contacts-group">
+                <div class="contacts-group__title">
+                  <?php echo $contact['title'] ?>
                 </div>
-                <?php endforeach; ?>
+                <div class="contacts-group__address">
+                  <?php echo $contact['address'] ?>
+                </div>
+                <div class="contacts-group__data">
+                  <?php foreach ($contact['data'] as $data): ?>
+                  <div class="contacts-group__data-item contacts-group__data-item_<?php echo $data['type'] ?>">
+                    <?php
+                      if ($data['type'] === 'email') {
+                        echo '<a href="mailto:' . $data['value'] . '">' . $data['value'] . '</a>';
+                      } else if ($data['type'] === 'phone') {
+                        echo '<a href="tel:' . $data['value'] . '">' . $data['value'] . '</a>';
+                      } else {
+                        echo $data['value'];
+                      }
+                    ?>
+                  </div>
+                  <?php endforeach; ?>
+                </div>
               </div>
+              <?php endforeach; ?>
             </div>
-            <?php endforeach; ?>
 
             <div class="contacts-body__title">
               Обратная связь
@@ -284,7 +286,7 @@ Template Name: Главная
               </label>
             </div>
             <div class="contacts-form__submit">
-              <button class="ui-button-primary" type="button">
+              <button class="ui-button-secondary" type="button">
                 Хочу проконсультироваться
               </button>
             </div>
