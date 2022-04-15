@@ -297,6 +297,11 @@
   padding: 0;
   border: 0;
   background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #ff8825;
+  }
 
   .reviews_animation-out & {
     animation: animationOut 400ms ease;

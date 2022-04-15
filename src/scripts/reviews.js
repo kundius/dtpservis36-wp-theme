@@ -54,7 +54,6 @@ function init (wrapper, reviews) {
     detailsWrap.style.top = `${rect.top}px`
     detailsWrap.style.left = `${rect.left}px`
     detailsWrap.style.width = `${rect.width}px`
-    detailsWrap.style.height = `${detailsWrap.scrollHeight}px`
   }
 
   const showDetails = () => {
