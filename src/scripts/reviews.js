@@ -4,12 +4,12 @@ function init (wrapper, reviews) {
   const name = wrapper.querySelector('.reviews-info__name')
   const description = wrapper.querySelector('.reviews-info__desc')
   const date = wrapper.querySelector('.reviews-info__date')
-  const previewExcerpt = wrapper.querySelector('.reviews-preview__excerpt')
+  const previewExcerpt = wrapper.querySelector('.reviews-preview__content-text')
   const previewImage = wrapper.querySelector('.reviews-preview__figure-image')
-  const previewVideo = wrapper.querySelector('.reviews-preview__video')
-  const detailsExcerpt = wrapper.querySelector('.reviews-details__excerpt')
+  const previewVideo = wrapper.querySelector('.reviews-preview__content-video')
+  const detailsText = wrapper.querySelector('.reviews-details__content-text')
   const detailsImage = wrapper.querySelector('.reviews-details__figure-image')
-  const detailsVideo = wrapper.querySelector('.reviews-details__video')
+  const detailsVideo = wrapper.querySelector('.reviews-details__content-video')
 
   let duration = 400
   let active = 0
@@ -28,7 +28,7 @@ function init (wrapper, reviews) {
       previewVideo.style.display = reviews[index].video ? 'block' : 'none'
       previewImage.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
       
-      detailsExcerpt.innerHTML = reviews[index].excerpt
+      detailsText.innerHTML = reviews[index].excerpt
       detailsVideo.innerHTML = reviews[index].video
       detailsVideo.style.display = reviews[index].video ? 'block' : 'none'
       detailsImage.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null

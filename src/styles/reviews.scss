@@ -216,7 +216,7 @@
   overflow: hidden;
 }
 
-.reviews-preview__video {
+.reviews-preview__content-video {
   overflow: hidden;
   margin-bottom: 16px;
 
@@ -236,7 +236,7 @@
   }
 }
 
-.reviews-preview__content {
+.reviews-preview__content-text {
   font-size: 18px;
   line-height: 24px;
   color: #252525;
@@ -399,7 +399,7 @@
   }
 }
 
-.reviews-details__video {
+.reviews-details__content-video {
   overflow: hidden;
   margin-bottom: 16px;
 
@@ -409,7 +409,7 @@
   }
 }
 
-.reviews-details__content {
+.reviews-details__content-text {
   font-size: 18px;
   line-height: 24px;
   color: #252525;

@@ -165,10 +165,10 @@ Template Name: Главная
                     </div>
                   </div>
                   <div class="reviews-preview__content">
-                    <div class="reviews-preview__video">
+                    <div class="reviews-preview__content-video">
                       <?php echo $reviews[0]['video'] ?>
                     </div>
-                    <div class="reviews-preview__content">
+                    <div class="reviews-preview__content-text">
                       <?php echo $reviews[0]['excerpt'] ?>
                     </div>
                   </div>
@@ -180,10 +180,10 @@ Template Name: Главная
                     <div class="reviews-details__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
                   </div>
                   <div class="reviews-details__content">
-                    <div class="reviews-details__video">
+                    <div class="reviews-details__content-video">
                       <?php echo $reviews[0]['video'] ?>
                     </div>
-                    <div class="reviews-details__content">
+                    <div class="reviews-details__content-text">
                       <?php echo $reviews[0]['content'] ?>
                     </div>
                   </div>
