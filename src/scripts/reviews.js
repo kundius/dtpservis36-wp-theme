@@ -23,6 +23,8 @@ function init (reviews) {
 
   const renderReview = (index) => {
     wrapper.classList.add('reviews_animation-out')
+    previewWrap.classList.add('reviews-preview_animation-out')
+    detailsWrap.classList.add('reviews-details_animation-out')
     animating = true
     setTimeout(() => {
       name.innerHTML = reviews[index].name
@@ -42,9 +44,17 @@ function init (reviews) {
       
       wrapper.classList.remove('reviews_animation-out')
       wrapper.classList.add('reviews_animation-in')
+
+      previewWrap.classList.remove('reviews-preview_animation-out')
+      previewWrap.classList.add('reviews-preview_animation-in')
+
+      detailsWrap.classList.remove('reviews-details_animation-out')
+      detailsWrap.classList.add('reviews-details_animation-in')
       
       setTimeout(() => {
         wrapper.classList.remove('reviews_animation-in')
+        previewWrap.classList.remove('reviews-preview_animation-in')
+        detailsWrap.classList.remove('reviews-details_animation-in')
         animating = false
       }, duration)
     }, duration)

@@ -225,12 +225,12 @@
     height: auto;
   }
 
-  .reviews_animation-out & {
+  .reviews-preview_animation-out & {
     animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
-  .reviews_animation-in & {
+  .reviews-preview_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
@@ -241,12 +241,12 @@
   line-height: 24px;
   color: #252525;
 
-  .reviews_animation-out & {
+  .reviews-preview_animation-out & {
     animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
-  .reviews_animation-in & {
+  .reviews-preview_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
@@ -270,12 +270,12 @@
   background-position: 50% 50%;
   background-size: cover;
 
-  .reviews_animation-out & {
+  .reviews-preview_animation-out & {
     animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
-  .reviews_animation-in & {
+  .reviews-preview_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
@@ -303,12 +303,12 @@
     color: #ff8825;
   }
 
-  .reviews_animation-out & {
+  .reviews-preview_animation-out & {
     animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
-  .reviews_animation-in & {
+  .reviews-preview_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
@@ -407,12 +407,12 @@
     height: auto;
   }
 
-  .reviews_animation-out & {
+  .reviews-details_animation-out & {
     animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
-  .reviews_animation-in & {
+  .reviews-details_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
@@ -423,12 +423,12 @@
   line-height: 24px;
   color: #252525;
 
-  .reviews_animation-out & {
+  .reviews-details_animation-out & {
     animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
-  .reviews_animation-in & {
+  .reviews-details_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
@@ -452,12 +452,12 @@
   background-position: 50% 50%;
   background-size: cover;
 
-  .reviews_animation-out & {
+  .reviews-details_animation-out & {
     animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
-  .reviews_animation-in & {
+  .reviews-details_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
