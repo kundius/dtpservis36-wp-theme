@@ -33,6 +33,17 @@
   padding: 52px 80px 25px;
   position: relative;
   z-index: 10;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid rgba(46, 48, 53, 0.4);
+  }
 }
 
 .contacts-body__groups {
@@ -52,6 +63,7 @@
   margin-top: 58px;
   width: 100%;
   text-align: center;
+  letter-spacing: 0.025em;
 }
 
 .contacts-form {
@@ -154,7 +166,7 @@
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 2px;
   width: 30px;
   height: 25px;
   background: url('../images/icon-email.svg') no-repeat 50% 50%;
@@ -170,7 +182,7 @@
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 1px;
   width: 19px;
   height: 26px;
   background: url('../images/icon-phone.svg') no-repeat 50% 50%;
