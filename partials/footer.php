@@ -29,7 +29,7 @@
       </div>
       <ul class="footer__links">
         <li>
-          <a href="<?php the_permalink(3) ?>" data-hystmodal-agreement>Пользовательское соглашение</a>
+          <a href="<?php the_permalink(3) ?>" data-hystmodal-page="3">Пользовательское соглашение</a>
         </li>
         <li>
           <!-- Policy -->
@@ -163,13 +163,15 @@
   </div>
 </div>
 
-<div class="hystmodal" id="agreement" aria-hidden="true">
+<div class="hystmodal" id="modal-page" aria-hidden="true">
   <div class="hystmodal__wrap">
     <div class="hystmodal__window" role="dialog" aria-modal="true">
       <button data-hystclose class="hystmodal__close"></button>
 
-      <div>
-        content
+      <div class="hystmodal__title" id="modal-page-title">
+      </div>
+
+      <div class="hystmodal__content" id="modal-page-content">
       </div>
     </div>
   </div>

@@ -4,19 +4,13 @@ const modal = new HystModal({
   linkAttributeName: "data-hystmodal",
 });
 
-// const modalAgreement = new HystModal({
-//   linkAttributeName: "data-hystmodal",
-// });
-
-const modalAgreementTrigger = document.querySelector(
-  "[data-hystmodal-agreement]"
-);
-if (modalAgreementTrigger) {
-  modalAgreementTrigger.addEventListener("click", (e) => {
+const modalPages = document.querySelectorAll("[data-hystmodal-page]") || [];
+modalPages.forEach((button) => {
+  button.addEventListener("click", (e) => {
     e.preventDefault();
 
     const data = new FormData();
-    data.append("id", 3);
+    data.append("id", button.dataset.hystmodalPage);
     data.append("action", "get_page");
 
     fetch(theme_ajax.url, {
@@ -30,5 +24,4 @@ if (modalAgreementTrigger) {
         modal.open("#agreement");
       });
   });
-}
-// data-hystmodal-agreement
+});
