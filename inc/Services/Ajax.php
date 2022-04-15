@@ -41,11 +41,9 @@ class Ajax implements Service
 
     public function myajax_data(): void
     {
-        \wp_localize_script('twentyfifteen-script', 'myajax',
-            array(
-                'url' => \admin_url('admin-ajax.php'),
-            )
-        );
+        \wp_localize_script('scripts', 'myajax', [
+            'url' => \admin_url('admin-ajax.php'),
+        ]);
     }
 
     public function get_agreement_callback(): void
