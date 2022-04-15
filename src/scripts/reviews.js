@@ -13,15 +13,17 @@ function init (wrapper, reviews) {
   let animating = false
 
   const renderReview = (index) => {
+    const review = reviews[index]
     wrapper.classList.add('reviews_animation-out')
     animating = true
     setTimeout(() => {
-      name.innerHTML = reviews[index].name
-      description.innerHTML = reviews[index].description
-      date.innerHTML = reviews[index].date
-      excerpt.innerHTML = reviews[index].excerpt
-      video.innerHTML = reviews[index].video
-      image.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
+      name.innerHTML = review.name
+      description.innerHTML = review.description
+      date.innerHTML = review.date
+      excerpt.innerHTML = review.excerpt
+      video.innerHTML = review.video
+      video.style.display = review.video ? 'block' : 'none'
+      image.style.backgroundImage = review.image ? `url('${review.image.url}')` : null
       wrapper.classList.remove('reviews_animation-out')
       wrapper.classList.add('reviews_animation-in')
       setTimeout(() => {

@@ -164,7 +164,6 @@ Template Name: Главная
                       </button>
                     </div>
                   </div>
-
                   <div class="reviews-preview__content">
                     <div class="reviews-preview__video">
                       <?php echo $reviews[0]['video'] ?>
@@ -179,7 +178,6 @@ Template Name: Главная
                   <div class="reviews-details__figure">
                     <div class="reviews-details__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
                   </div>
-
                   <div class="reviews-details__content">
                     <div class="reviews-details__video">
                       <?php echo $reviews[0]['video'] ?>
@@ -191,6 +189,7 @@ Template Name: Главная
                 </div>
               
               </div>
+
               <div class="reviews__layout-info">
                 <?php if ($title = get_field('theme_reviews_title', 'options')): ?>
                 <div class="reviews-info__title">
