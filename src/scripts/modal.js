@@ -23,7 +23,7 @@ modalPages.forEach((button) => {
     });
 
     // const formData = new FormData(form);
-    formData.append("_wpcf7_recaptcha_response", token);
+    // formData.append("_wpcf7_recaptcha_response", token);
     request.send(formData);
 
     // fetch(theme_ajax.url, {
