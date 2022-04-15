@@ -72,16 +72,20 @@
   box-sizing: border-box;
   flex-shrink: 0;
   flex-grow: 0;
-  background: #fff;
   width: 640px;
-  padding: 20px;
-  border-radius: 4px;
   max-width: 100%;
   overflow: visible;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
   transform: scale(0.9);
   opacity: 0;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 64px;
+  background: rgba(255, 255, 255, 0.961);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.21);
+  padding: 40px;
 }
 
 .hystmodal--small .hystmodal__window {
@@ -95,47 +99,44 @@
 
 .hystmodal__close {
   position: absolute;
-  right: 4px;
-  top: 4px;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  color: #b7b7b8;
+  border: 2px solid currentColor;
   border-radius: 50%;
-  color: #999;
   padding: 0;
-  border: none;
-  cursor: pointer;
   background: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    width: 5px;
+    height: 19px;
+    background: currentColor;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &::after {
+    content: '';
+    width: 5px;
+    height: 19px;
+    background: currentColor;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
   &:hover {
-    background: #c9d7e0;
     color: #000;
   }
-}
-
-.hystmodal__close::before {
-  content: '';
-  position: absolute;
-  width: 16px;
-  height: 2px;
-  background: currentColor;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.hystmodal__close::after {
-  content: '';
-  position: absolute;
-  width: 16px;
-  height: 2px;
-  background: currentColor;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 @media all and (max-width:767px) {
