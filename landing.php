@@ -35,15 +35,15 @@ Template Name: Главная
                 Служба аварийных комиссаров
               </div>
               <div class="intro-form__input">
-                <label class="ui-input-phone">
+                <label class="ui-input-field">
                   <input
                     type="text"
-                    class="ui-input-phone__input"
+                    class="ui-input-field__input"
                     name="your-phone"
                     data-inputmask="'mask': '+7 (999) 999-99-99'"
                     placeholder="+7 (___) ___-__-__"
                   />
-                  <span class="ui-input-phone__label">Введите ваш номер телефона</span>
+                  <span class="ui-input-field__label">Введите ваш номер телефона</span>
                 </label>
               </div>
               <div class="intro-form__submit">
@@ -204,7 +204,7 @@ Template Name: Главная
                   <button class="reviews-info__nav-right"></button>
                 </div>
                 <div class="reviews-info__send">
-                  <button class="ui-button-primary">
+                  <button class="ui-button-primary" data-hystmodal="#modal-review-form">
                     Добавиьте свой отзыв
                     <span class="ui-button-primary__plus"></span>
                   </button>
@@ -276,15 +276,15 @@ Template Name: Главная
 
           <form class="contacts-form">
             <div class="contacts-form__input">
-              <label class="ui-input-phone">
+              <label class="ui-input-field">
                 <input
                   type="text"
-                  class="ui-input-phone__input"
+                  class="ui-input-field__input"
                   name="your-phone"
                   data-inputmask="'mask': '+7 (999) 999-99-99'"
                   placeholder="+7 (___) ___-__-__"
                 />
-                <span class="ui-input-phone__label">Введите ваш номер телефона</span>
+                <span class="ui-input-field__label">Введите ваш номер телефона</span>
               </label>
             </div>
             <div class="contacts-form__submit">

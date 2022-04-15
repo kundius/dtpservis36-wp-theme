@@ -49,18 +49,25 @@
   </div>
 </footer>
 
-<div class="hystmodal hystmodal--small" id="feedback" aria-hidden="true">
+<div class="hystmodal hystmodal--small" id="modal-review-form" aria-hidden="true">
   <div class="hystmodal__wrap">
     <div class="hystmodal__window" role="dialog" aria-modal="true">
       <button data-hystclose class="hystmodal__close"></button>
 
-      <form action="/wp-json/contact-form-7/v1/contact-forms/12/feedback" method="post" class="modal-form js-form">
-        <div class="modal-form__title">
-          Заказать расчет
-        </div>
+      <div class="hystmodal__title">
+        Оставить отзыв
+      </div>
 
+      <form action="/wp-json/contact-form-7/v1/contact-forms/12/feedback" method="post" class="modal-form js-form">
         <div class="modal-form__field">
-          <input type="text" name="your-name" class="ui-input" placeholder="Контактное лицо:" />
+          <label class="ui-input-field">
+            <input
+              type="text"
+              class="ui-input-field__input"
+              name="your-name"
+            />
+            <span class="ui-input-field__label">Введите ваше имя</span>
+          </label>
         </div>
 
         <div class="modal-form__field">

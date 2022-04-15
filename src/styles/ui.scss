@@ -38,12 +38,12 @@ body {
   }
 }
 
-.ui-input-phone {
+.ui-input-field {
   position: relative;
   display: block;
 }
 
-.ui-input-phone__label {
+.ui-input-field__label {
   font-size: 12px;
   color: #8c8c8c;
   line-height: 1;
@@ -57,7 +57,7 @@ body {
   transition: .3s ease;
 }
 
-.ui-input-phone__input {
+.ui-input-field__input {
   width: 100%;
   border: 3px solid #e3e3e3;
   height: 72px;
@@ -74,12 +74,12 @@ body {
   transition: .3s ease;
 }
 
-.ui-input-phone__input:focus {
+.ui-input-field__input:focus {
   padding-top: 0;
   background: #f8f9fe;
 }
 
-.ui-input-phone__input:focus + .ui-input-phone__label {
+.ui-input-field__input:focus + .ui-input-field__label {
   opacity: 0;
 }
 
