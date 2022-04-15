@@ -29,13 +29,6 @@ class Ajax implements Service
 
         \add_action('wp_ajax_get_page', [$this, 'get_page_callback']);
         \add_action('wp_ajax_nopriv_get_page', [$this, 'get_page_callback']);
-
-        // add_action( 'rest_api_init', function() {
-
-        //   remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );
-        
-        //   add_filter( 'rest_pre_serve_request', [$this, 'init_cors']);
-        // }, 15 );
     }
 
     /**
@@ -46,20 +39,6 @@ class Ajax implements Service
         return 'acf';
     }
 
-    // public function init_cors($value): string
-    // {
-    //   $origin = get_http_origin();
-    //   $allowed_origins = [ 'дтпсервис36.рф', 'xn--36-dlchft0cjhee.xn--p1ai' ];
-    
-    //   if ( $origin && in_array( $origin, $allowed_origins ) ) {
-    //     header( 'Access-Control-Allow-Origin: ' . esc_url_raw( $origin ) );
-    //     header( 'Access-Control-Allow-Methods: GET' );
-    //     header( 'Access-Control-Allow-Credentials: true' );
-    //   }
-    
-    //   return $value;
-    // }
-
     public function ajax_data(): void
     {
         \wp_localize_script('scripts', 'theme_ajax', [
@@ -69,8 +48,6 @@ class Ajax implements Service
 
     public function get_page_callback(): void
     {
-
-        wp_die(111);
 
         $id = intval($_POST['id']);
 
