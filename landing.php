@@ -157,7 +157,10 @@ Template Name: Главная
                 <div class="reviews-preview">
                   <div class="reviews-preview__figure">
                     <div class="reviews-preview__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
-                    <div class="reviews-preview__figure-more">
+                    <div
+                      class="reviews-preview__figure-more"
+                      style="display: <?php ($reviews[0]['content'] ? 'block' : 'none') ?>"
+                    >
                       <button class="reviews-preview__more">
                         читать отзыв полностью
                         <span class="reviews-preview__more-arrow"></span>
@@ -165,7 +168,10 @@ Template Name: Главная
                     </div>
                   </div>
                   <div class="reviews-preview__content">
-                    <div class="reviews-preview__content-video">
+                    <div
+                      class="reviews-preview__content-video"
+                      style="display: <?php ($reviews[0]['video'] ? 'block' : 'none') ?>"
+                    >
                       <?php echo $reviews[0]['video'] ?>
                     </div>
                     <div class="reviews-preview__content-text">
@@ -180,7 +186,10 @@ Template Name: Главная
                     <div class="reviews-details__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
                   </div>
                   <div class="reviews-details__content">
-                    <div class="reviews-details__content-video">
+                    <div
+                      class="reviews-details__content-video"
+                      style="display: <?php ($reviews[0]['video'] ? 'block' : 'none') ?>"
+                    >
                       <?php echo $reviews[0]['video'] ?>
                     </div>
                     <div class="reviews-details__content-text">

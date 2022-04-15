@@ -92,8 +92,6 @@ function init (wrapper, reviews) {
   buttonClose.addEventListener('click', () => {
     hideDetails()
   })
-
-  renderReview(active)
 }
 
 const wrapper = document.querySelector('.reviews')
