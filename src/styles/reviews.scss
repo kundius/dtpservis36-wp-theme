@@ -353,6 +353,7 @@
   overflow: hidden;
   position: fixed;
   display: none;
+  z-index: 200;
 }
 
 .reviews-details__close {

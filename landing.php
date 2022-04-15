@@ -263,6 +263,9 @@ Template Name: Главная
               </div>
             </div>
             <?php endforeach; ?>
+            <div class="section-contacts__feedback-title">
+              Обратная связь
+            </div>
           </div>
         </div>
       </section>
