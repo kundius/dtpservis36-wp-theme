@@ -157,11 +157,11 @@
   background-size: cover;
 }
 
-.contacts-group__data-item_email {
+.contacts-group__data-item_phone {
   padding-left: 22px;
 }
 
-.contacts-group__data-item_email::before {
+.contacts-group__data-item_phone::before {
   content: '';
   display: inline-block;
   position: absolute;
