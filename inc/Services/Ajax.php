@@ -25,7 +25,7 @@ class Ajax implements Service
      */
     public function boot(Service_Container $container): void
     {
-        \add_action('wp_enqueue_scripts', [$this, 'myajax_data'], 99);
+        \add_action('wp_enqueue_scripts', [$this, 'ajax_data'], 99);
 
         \add_action('wp_ajax_get_agreement', [$this, 'get_agreement_callback']);
         \add_action('wp_ajax_nopriv_get_agreement', [$this, 'get_agreement_callback']);
@@ -39,9 +39,9 @@ class Ajax implements Service
         return 'acf';
     }
 
-    public function myajax_data(): void
+    public function ajax_data(): void
     {
-        \wp_localize_script('scripts', 'myajax', [
+        \wp_localize_script('scripts', 'theme_ajax', [
             'url' => \admin_url('admin-ajax.php'),
         ]);
     }
