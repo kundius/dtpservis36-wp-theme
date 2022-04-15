@@ -237,7 +237,7 @@ Template Name: Главная
       <section class="section-contacts">
         <div class="ui-container">
           <div class="section-contacts__title">Контакты</div>
-          <div class="contacts">
+          <div class="section-contacts__body">
             <?php foreach ($contacts as $contact): ?>
             <div class="contacts-group">
               <div class="contacts-group__title">
