@@ -355,6 +355,11 @@
   left: 0;
   top: 0;
   width: 100%;
+  display: none;
+
+  .reviews_show-details & {
+    display: block;
+  }
 }
 
 .reviews-details__close {
