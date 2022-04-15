@@ -237,7 +237,8 @@ Template Name: Главная
       <section class="section-contacts">
         <div class="ui-container">
           <div class="section-contacts__title">Контакты</div>
-          <div class="section-contacts__body">
+
+          <div class="contacts-body">
             <?php foreach ($contacts as $contact): ?>
             <div class="contacts-group">
               <div class="contacts-group__title">
@@ -263,10 +264,32 @@ Template Name: Главная
               </div>
             </div>
             <?php endforeach; ?>
-            <div class="section-contacts__feedback-title">
+
+            <div class="contacts-body__title">
               Обратная связь
             </div>
           </div>
+
+          <form class="contacts-form">
+            <div class="contacts-form__input">
+              <label class="ui-input-phone">
+                <input
+                  type="text"
+                  class="ui-input-phone__input"
+                  name="your-phone"
+                  data-inputmask="'mask': '+7 (999) 999-99-99'"
+                  placeholder="+7 (___) ___-__-__"
+                />
+                <span class="ui-input-phone__label">Введите ваш номер телефона</span>
+              </label>
+            </div>
+            <div class="contacts-form__submit">
+              <button class="ui-button-primary" type="button">
+                Хочу проконсультироваться
+              </button>
+            </div>
+          </form>
+
         </div>
       </section>
 
