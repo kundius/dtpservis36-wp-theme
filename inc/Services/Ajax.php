@@ -27,8 +27,8 @@ class Ajax implements Service
     {
         \add_action('wp_enqueue_scripts', [$this, 'ajax_data'], 99);
 
-        \add_action('wp_ajax_get_agreement', [$this, 'get_agreement_callback']);
-        \add_action('wp_ajax_nopriv_get_agreement', [$this, 'get_agreement_callback']);
+        \add_action('wp_ajax_get_page', [$this, 'get_page_callback']);
+        \add_action('wp_ajax_nopriv_get_page', [$this, 'get_page_callback']);
     }
 
     /**
@@ -46,13 +46,24 @@ class Ajax implements Service
         ]);
     }
 
-    public function get_agreement_callback(): void
+    public function get_page_callback(): void
     {
-        $whatever = intval($_POST['whatever']);
+        $id = intval($_GET['id']);
 
-        echo $whatever + 10;
+        if (!$id) {
+            echo json_encode([
+                'success' => false,
+            ]);
+        }
 
-        // выход нужен для того, чтобы в ответе не было ничего лишнего, только то что возвращает функция
+        echo json_encode([
+            'success' => true,
+            'data' => [
+                'title' => get_the_title($id),
+                'content' => get_the_content($id),
+            ],
+        ]);
+
         wp_die();
     }
 
