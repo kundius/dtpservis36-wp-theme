@@ -4,28 +4,38 @@ function init (wrapper, reviews) {
   const name = wrapper.querySelector('.reviews-info__name')
   const description = wrapper.querySelector('.reviews-info__desc')
   const date = wrapper.querySelector('.reviews-info__date')
-  const excerpt = wrapper.querySelector('.reviews-preview__excerpt')
-  const image = wrapper.querySelector('.reviews-preview__figure-image')
-  const video = wrapper.querySelector('.reviews-preview__video')
+  const previewExcerpt = wrapper.querySelector('.reviews-preview__excerpt')
+  const previewImage = wrapper.querySelector('.reviews-preview__figure-image')
+  const previewVideo = wrapper.querySelector('.reviews-preview__video')
+  const detailsExcerpt = wrapper.querySelector('.reviews-details__excerpt')
+  const detailsImage = wrapper.querySelector('.reviews-details__figure-image')
+  const detailsVideo = wrapper.querySelector('.reviews-details__video')
 
   let duration = 400
   let active = 0
   let animating = false
 
   const renderReview = (index) => {
-    const review = reviews[index]
     wrapper.classList.add('reviews_animation-out')
     animating = true
     setTimeout(() => {
-      name.innerHTML = review.name
-      description.innerHTML = review.description
-      date.innerHTML = review.date
-      excerpt.innerHTML = review.excerpt
-      video.innerHTML = review.video
-      video.style.display = review.video ? 'block' : 'none'
-      image.style.backgroundImage = review.image ? `url('${review.image.url}')` : null
+      name.innerHTML = reviews[index].name
+      description.innerHTML = reviews[index].description
+      date.innerHTML = reviews[index].date
+      
+      previewExcerpt.innerHTML = reviews[index].excerpt
+      previewVideo.innerHTML = reviews[index].video
+      previewVideo.style.display = reviews[index].video ? 'block' : 'none'
+      previewImage.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
+      
+      detailsExcerpt.innerHTML = reviews[index].excerpt
+      detailsVideo.innerHTML = reviews[index].video
+      detailsVideo.style.display = reviews[index].video ? 'block' : 'none'
+      detailsImage.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
+      
       wrapper.classList.remove('reviews_animation-out')
       wrapper.classList.add('reviews_animation-in')
+      
       setTimeout(() => {
         wrapper.classList.remove('reviews_animation-in')
         animating = false
