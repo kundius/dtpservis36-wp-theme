@@ -153,6 +153,7 @@ Template Name: Главная
           <div class="ui-container">
             <div class="reviews__layout">
               <div class="reviews__layout-content">
+                
                 <div class="reviews-preview">
                   <div class="reviews-preview__figure">
                     <div class="reviews-preview__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
@@ -168,11 +169,33 @@ Template Name: Главная
                     <div class="reviews-preview__video">
                       <?php echo $reviews[0]['video'] ?>
                     </div>
-                    <div class="reviews-preview__excerpt">
+                    <div class="reviews-preview__content">
                       <?php echo $reviews[0]['excerpt'] ?>
                     </div>
                   </div>
                 </div>
+                
+                <div class="reviews-details">
+                  <div class="reviews-details__figure">
+                    <div class="reviews-details__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
+                    <div class="reviews-details__figure-more">
+                      <button class="reviews-details__more">
+                        читать отзыв полностью
+                        <span class="reviews-details__more-arrow"></span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="reviews-details__content">
+                    <div class="reviews-details__video">
+                      <?php echo $reviews[0]['video'] ?>
+                    </div>
+                    <div class="reviews-details__content">
+                      <?php echo $reviews[0]['content'] ?>
+                    </div>
+                  </div>
+                </div>
+              
               </div>
               <div class="reviews__layout-info">
                 <?php if ($title = get_field('theme_reviews_title', 'options')): ?>
