@@ -49,17 +49,23 @@ function init (wrapper, reviews) {
     }, duration)
   }
 
-  const showDetails = () => {
+  const alignDetails = () => {
     const rect = previewWrap.getBoundingClientRect()
     detailsWrap.style.top = `${rect.top}px`
     detailsWrap.style.left = `${rect.left}px`
     detailsWrap.style.width = `${rect.width}px`
+    detailsWrap.style.height = `${detailsWrap.scrollHeight}px`
+  }
+
+  const showDetails = () => {
+    alignDetails()
     detailsWrap.style.display = 'block'
+    window.addEventListener('scroll', alignDetails)
   }
   
   const hideDetails = () => {
     detailsWrap.style.display = 'none'
-
+    window.removeEventListener('scroll', alignDetails)
   }
 
   buttonLeft.addEventListener('click', () => {
