@@ -14,7 +14,11 @@ modalPages.forEach((button) => {
     data.append("action", "get_page");
 
     fetch(theme_ajax.url, {
-      methode: "post",
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
       body: data,
     })
       .then((request) => request.json())
