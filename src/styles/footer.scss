@@ -126,6 +126,9 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__links li {
@@ -138,8 +141,14 @@
   font-size: 12px;
   color: #666;
   letter-spacing: 0.05em;
-  line-height: 21px;
+  line-height: 22px;
   padding: 0 10px;
+  border-radius: 11px;
+}
+
+.footer__links li a:hover {
+  color: #fff;
+  background: #808083;
 }
 
 .footer__counters {
