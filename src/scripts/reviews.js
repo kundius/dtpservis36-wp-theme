@@ -10,6 +10,8 @@ function init (wrapper, reviews) {
   const previewExcerpt = wrapper.querySelector('.reviews-preview__content-text')
   const previewImage = wrapper.querySelector('.reviews-preview__figure-image')
   const previewVideo = wrapper.querySelector('.reviews-preview__content-video')
+  const previewWrap = wrapper.querySelector('.reviews-preview')
+  const detailsWrap = wrapper.querySelector('.reviews-details')
   const detailsText = wrapper.querySelector('.reviews-details__content-text')
   const detailsImage = wrapper.querySelector('.reviews-details__figure-image')
   const detailsVideo = wrapper.querySelector('.reviews-details__content-video')
@@ -47,6 +49,19 @@ function init (wrapper, reviews) {
     }, duration)
   }
 
+  const showDetails = () => {
+    const rect = previewWrap.getBoundingClientRect()
+    detailsWrap.style.top = `${rect.top}px`
+    detailsWrap.style.left = `${rect.left}px`
+    detailsWrap.style.width = `${rect.width}px`
+    detailsWrap.style.display = 'block'
+  }
+  
+  const hideDetails = () => {
+    detailsWrap.style.display = 'none'
+
+  }
+
   buttonLeft.addEventListener('click', () => {
     if (animating) return
 
@@ -65,11 +80,11 @@ function init (wrapper, reviews) {
   })
 
   buttonMore.addEventListener('click', () => {
-    wrapper.classList.toggle('reviews_show-details')
+    showDetails()
   })
 
   buttonClose.addEventListener('click', () => {
-    wrapper.classList.remove('reviews_show-details')
+    hideDetails()
   })
 
   renderReview(active)
