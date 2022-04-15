@@ -217,7 +217,23 @@
 }
 
 .reviews-preview__video {
+  overflow: hidden;
+  margin-bottom: 16px;
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .reviews_animation-out & {
+    animation: animationOut 400ms ease;
+    animation-fill-mode: forwards;
+  }
   
+  .reviews_animation-in & {
+    animation: animationIn 400ms ease;
+    animation-fill-mode: forwards;
+  }
 }
 
 .reviews-preview__excerpt {
