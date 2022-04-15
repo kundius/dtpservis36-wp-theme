@@ -109,14 +109,12 @@
   font-weight: bold;
 
   .reviews_animation-out & {
-    animation: animationOut 300ms ease;
-    animation-delay: 100ms;
+    animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
   .reviews_animation-in & {
-    animation: animationIn 300ms ease;
-    animation-delay: 100ms;
+    animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
 }
@@ -129,14 +127,12 @@
   margin-top: 7px;
 
   .reviews_animation-out & {
-    animation: animationOut 300ms ease;
-    animation-delay: 200ms;
+    animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
   .reviews_animation-in & {
-    animation: animationIn 300ms ease;
-    animation-delay: 200ms;
+    animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
 }
@@ -229,12 +225,12 @@
   color: #252525;
 
   .reviews_animation-out & {
-    animation: animationOut 500ms ease;
+    animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
   .reviews_animation-in & {
-    animation: animationIn 500ms ease;
+    animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
 }
@@ -258,12 +254,12 @@
   background-size: cover;
 
   .reviews_animation-out & {
-    animation: animationOut 500ms ease;
+    animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
   .reviews_animation-in & {
-    animation: animationIn 500ms ease;
+    animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
 }
@@ -283,12 +279,12 @@
   align-items: center;
 
   .reviews_animation-out & {
-    animation: animationOut 500ms ease;
+    animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
   .reviews_animation-in & {
-    animation: animationIn 500ms ease;
+    animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
 }
