@@ -18,9 +18,9 @@ function initForClassName(className) {
       let pos = this.getBoundingClientRect();
       let width = this.offsetWidth;
       let height = this.offsetHeight;
-      let posX = ev.pageX - pos.left;
-      let posY = ev.pageY - pos.top;
-      console.log(ev.pageY, pos.top)
+      let posX = ev.pageX - window.pageYOffset - pos.left;
+      let posY = ev.pageY - window.pageYOffset - pos.top;
+      console.log(ev.pageY, window.pageYOffset, pos.top)
       let rippleStyleAttr = new RippleStyleAttributes(
         width,
         height,
