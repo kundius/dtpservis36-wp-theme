@@ -16,6 +16,7 @@
   left: calc(50% + 80px);
   transform: skew(26deg);
   z-index: 2;
+  pointer-events: none;
 
   &::before {
     content: '';
@@ -50,6 +51,7 @@
   height: 100px;
   background: #fff;
   width: 100%;
+  pointer-events: none;
 }
 
 .section-contacts::after {
@@ -63,6 +65,7 @@
   background: #fff;
   width: 50vw;
   transform: skewX(26deg);
+  pointer-events: none;
 }
 
 .section-contacts__title {
