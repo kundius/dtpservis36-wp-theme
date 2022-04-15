@@ -1,5 +1,7 @@
 function init (wrapper, reviews) {
+  const buttonMoreWrap = wrapper.querySelector('.reviews-preview__figure-more')
   const buttonMore = wrapper.querySelector('.reviews-preview__more')
+  const buttonClose = wrapper.querySelector('.reviews-details__close')
   const buttonLeft = wrapper.querySelector('.reviews-info__nav-left')
   const buttonRight = wrapper.querySelector('.reviews-info__nav-right')
   const name = wrapper.querySelector('.reviews-info__name')
@@ -26,6 +28,7 @@ function init (wrapper, reviews) {
       
       previewExcerpt.innerHTML = reviews[index].excerpt
       previewVideo.innerHTML = reviews[index].video
+      buttonMoreWrap.style.display = reviews[index].content ? 'block' : 'none'
       previewVideo.style.display = reviews[index].video ? 'block' : 'none'
       previewImage.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
       
@@ -63,6 +66,10 @@ function init (wrapper, reviews) {
 
   buttonMore.addEventListener('click', () => {
     wrapper.classList.toggle('reviews_show-details')
+  })
+
+  buttonClose.addEventListener('click', () => {
+    wrapper.classList.remove('reviews_show-details')
   })
 }
 
