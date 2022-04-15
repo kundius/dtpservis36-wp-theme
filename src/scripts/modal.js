@@ -12,22 +12,23 @@ const modalAgreementTrigger = document.querySelector(
   "[data-hystmodal-agreement]"
 );
 if (modalAgreementTrigger) {
-  modalAgreementTrigger.addEventListener("click", async (e) => {
+  modalAgreementTrigger.addEventListener("click", (e) => {
     e.preventDefault();
 
     const data = new FormData();
     data.append("id", 3);
     data.append("action", "get_page");
 
-    const request = await fetch(theme_ajax.url, {
+    fetch(theme_ajax.url, {
       methode: "get",
       body: data,
-    });
-    const json = await request.json();
+    })
+      .then((request) => request.json())
+      .then((json) => {
+        console.log(json);
 
-    console.log(json);
-
-    modal.open("#agreement");
+        modal.open("#agreement");
+      });
   });
 }
 // data-hystmodal-agreement
