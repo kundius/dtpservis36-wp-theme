@@ -57,23 +57,11 @@ class Ajax implements Service
             ]);
         }
 
-        $content_post = get_post($my_postid);
-
-        if (!$content_post) {
-            echo json_encode([
-                'success' => false,
-            ]);
-        }
-
-        $content = $content_post->post_content;
-        $content = apply_filters('the_content', $content);
-        $content = str_replace(']]>', ']]&gt;', $content);
-
         echo json_encode([
             'success' => true,
             'data' => [
                 'title' => get_the_title($id),
-                'content' => $content,
+                'content' => get_post_field('post_content', $id),
             ],
         ]);
 
