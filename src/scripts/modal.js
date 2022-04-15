@@ -17,6 +17,8 @@ modalPages.forEach((button) => {
     request.open("POST", theme_ajax.url, true);
     request.addEventListener("readystatechange", function () {
       if (this.readyState != 4) return;
+
+      const response = JSON.parse(request.response);
       console.log(response);
 
       modal.open("#modal-page");
