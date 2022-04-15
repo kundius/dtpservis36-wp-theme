@@ -20,7 +20,7 @@ if (modalAgreementTrigger) {
     data.append("action", "get_page");
 
     fetch(theme_ajax.url, {
-      methode: "get",
+      methode: "post",
       body: data,
     })
       .then((request) => request.json())

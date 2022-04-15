@@ -48,7 +48,7 @@ class Ajax implements Service
 
     public function get_page_callback(): void
     {
-        $id = intval($_GET['id']);
+        $id = intval($_POST['id']);
 
         if (!$id) {
             echo json_encode([
