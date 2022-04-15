@@ -19,28 +19,16 @@ modalPages.forEach((button) => {
       if (this.readyState != 4) return;
 
       const response = JSON.parse(request.response);
-      console.log(response);
 
-      modal.open("#modal-page");
+      if (response.success) {
+        document.getElementById("modal-page-title").innerHTML =
+          response.data.title;
+        document.getElementById("modal-page-content").innerHTML =
+          response.data.content;
+        modal.open("#modal-page");
+      }
     });
 
-    // const formData = new FormData(form);
-    // formData.append("_wpcf7_recaptcha_response", token);
     request.send(formData);
-
-    // fetch(theme_ajax.url, {
-    //   method: 'POST',
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: formData,
-    // })
-    //   .then((response) => response.json())
-    //   .then((json) => {
-    //     console.log(json);
-
-    //     modal.open("#modal-page");
-    //   });
   });
 });

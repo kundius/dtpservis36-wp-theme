@@ -32,8 +32,7 @@
           <a href="<?php the_permalink(3) ?>" data-hystmodal-page="3">Пользовательское соглашение</a>
         </li>
         <li>
-          <!-- Policy -->
-          <a href="<?php the_permalink(33) ?>" data-hystmodal="#feedback">Политика обработки персональных данных</a>
+          <a href="<?php the_permalink(33) ?>" data-hystmodal-page="33">Политика обработки персональных данных</a>
         </li>
       </ul>
       <div class="footer__counters">
