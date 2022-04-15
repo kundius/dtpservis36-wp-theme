@@ -9,23 +9,36 @@ modalPages.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
 
-    const data = new FormData();
-    data.append("id", button.dataset.hystmodalPage);
-    data.append("action", "get_page");
+    const formData = new FormData();
+    formData.append("id", button.dataset.hystmodalPage);
+    formData.append("action", "get_page");
 
-    fetch(theme_ajax.url, {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: data,
-    })
-      .then((response) => response.json())
-      .then((json) => {
-        console.log(json);
+    const request = new XMLHttpRequest();
+    request.open("POST", form.action, true);
+    request.addEventListener("readystatechange", function () {
+      if (this.readyState != 4) return;
+      console.log(response);
 
-        modal.open("#modal-page");
-      });
+      modal.open("#modal-page");
+    });
+
+    // const formData = new FormData(form);
+    formData.append("_wpcf7_recaptcha_response", token);
+    request.send(formData);
+
+    // fetch(theme_ajax.url, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: formData,
+    // })
+    //   .then((response) => response.json())
+    //   .then((json) => {
+    //     console.log(json);
+
+    //     modal.open("#modal-page");
+    //   });
   });
 });
