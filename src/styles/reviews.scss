@@ -85,12 +85,12 @@
   background: #195ab8;
 
   .reviews_animation-out & {
-    animation: animationOut 300ms ease;
+    animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
   .reviews_animation-in & {
-    animation: animationIn 300ms ease;
+    animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
 }

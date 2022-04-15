@@ -7,7 +7,7 @@ function init (wrapper, reviews) {
   const excerpt = wrapper.querySelector('.reviews-preview__excerpt')
   const image = wrapper.querySelector('.reviews-preview__figure-image')
 
-  let duration = 500
+  let duration = 400
   let active = 0
   // let timer
   let animating = false
