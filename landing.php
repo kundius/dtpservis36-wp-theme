@@ -156,19 +156,27 @@ Template Name: Главная
                 <div class="reviews-preview">
                   <div class="reviews-preview__figure">
                     <div class="reviews-preview__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
+                    <?php if ($reviews[0]['content']): ?>
                     <div class="reviews-preview__figure-more">
-                      <a href="#" class="reviews-preview__more">
+                      <button class="reviews-preview__more">
                         читать отзыв полностью
                         <span class="reviews-preview__more-arrow"></span>
-                      </a>
+                      </button>
                     </div>
+                    <?php endif; ?>
                   </div>
 
                   <div class="reviews-preview__content">
-                    <!-- <div class="reviews-preview__video"></div> -->
+                    <?php if ($reviews[0]['video']): ?>
+                    <div class="reviews-preview__video">
+                      <?php echo $reviews[0]['video'] ?>
+                    </div>
+                    <?php endif; ?>
+                    <?php if ($reviews[0]['excerpt']): ?>
                     <div class="reviews-preview__excerpt">
                       <?php echo $reviews[0]['excerpt'] ?>
                     </div>
+                    <?php endif; ?>
                   </div>
                 </div>
               </div>
@@ -178,16 +186,22 @@ Template Name: Главная
                   <?php echo $title ?>
                 </div>
                 <?php endif; ?>
+                <?php if ($reviews[0]['date']): ?>
                 <div class="reviews-info__date">
                   <?php echo $reviews[0]['date'] ?>
                 </div>
+                <?php endif; ?>
                 <div class="reviews-info__group">
-                  <div class="reviews-info__name">
-                    <?php echo $reviews[0]['name'] ?>
-                  </div>
-                  <div class="reviews-info__desc">
-                    <?php echo $reviews[0]['description'] ?>
-                  </div>
+                  <?php if ($reviews[0]['name']): ?>
+                    <div class="reviews-info__name">
+                      <?php echo $reviews[0]['name'] ?>
+                    </div>
+                  <?php endif; ?>
+                  <?php if ($reviews[0]['description']): ?>
+                    <div class="reviews-info__desc">
+                      <?php echo $reviews[0]['description'] ?>
+                    </div>
+                  <?php endif; ?>
                 </div>
                 <div class="reviews-info__nav">
                   <button class="reviews-info__nav-left"></button>

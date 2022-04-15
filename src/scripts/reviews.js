@@ -9,7 +9,6 @@ function init (wrapper, reviews) {
 
   let duration = 400
   let active = 0
-  // let timer
   let animating = false
 
   const renderReview = (index) => {

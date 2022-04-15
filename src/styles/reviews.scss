@@ -277,6 +277,9 @@
   letter-spacing: 0.025em;
   display: inline-flex;
   align-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
 
   .reviews_animation-out & {
     animation: animationOut 400ms ease;
