@@ -21,11 +21,11 @@ modalPages.forEach((button) => {
       },
       body: data,
     })
-      .then((request) => request.json())
+      .then((response) => response.json())
       .then((json) => {
         console.log(json);
 
-        modal.open("#agreement");
+        modal.open("#modal-page");
       });
   });
 });

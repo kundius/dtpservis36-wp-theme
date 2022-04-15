@@ -48,6 +48,9 @@ class Ajax implements Service
 
     public function get_page_callback(): void
     {
+
+        wp_die(111);
+
         $id = intval($_POST['id']);
 
         if (!$id) {
