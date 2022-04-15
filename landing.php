@@ -178,12 +178,6 @@ Template Name: Главная
                 <div class="reviews-details">
                   <div class="reviews-details__figure">
                     <div class="reviews-details__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
-                    <div class="reviews-details__figure-more">
-                      <button class="reviews-details__more">
-                        читать отзыв полностью
-                        <span class="reviews-details__more-arrow"></span>
-                      </button>
-                    </div>
                   </div>
 
                   <div class="reviews-details__content">
@@ -228,6 +222,8 @@ Template Name: Главная
             </div>
           </div>
         </section>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
 
       <?php get_template_part('partials/footer') ?>
