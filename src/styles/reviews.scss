@@ -211,7 +211,7 @@
   @include below(md) {
     margin-left: -20px;
     margin-top: 40px;
-    span {
+    .reviews-info__send-pronoun {
       display: none;
     }
   }
@@ -484,6 +484,10 @@
   .reviews-details_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
+  }
+
+  @include below(md) {
+    font-size: 16px;
   }
 }
 

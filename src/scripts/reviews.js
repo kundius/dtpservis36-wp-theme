@@ -62,10 +62,20 @@ function init (reviews) {
 
   const alignDetails = () => {
     const rect = previewWrap.getBoundingClientRect()
-    detailsWrap.style.top = `${rect.top}px`
-    detailsWrap.style.left = `${rect.left}px`
-    detailsWrap.style.width = `${rect.width}px`
-    detailsWrap.style.minHeight = `${rect.height}px`
+
+    let top = rect.top
+    let left = rect.left
+    let width = rect.width
+    let height = rect.height
+
+    if (window.matchMedia('(max-width: 959px)')) {
+      width = window.offsetWidth - left * 2
+    }
+
+    detailsWrap.style.top = `${top}px`
+    detailsWrap.style.left = `${left}px`
+    detailsWrap.style.width = `${width}px`
+    detailsWrap.style.minHeight = `${height}px`
   }
 
   const showDetails = () => {
