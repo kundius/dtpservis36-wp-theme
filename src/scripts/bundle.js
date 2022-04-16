@@ -5,7 +5,7 @@
 
 import "./modal";
 import "./form";
-import "./drawer";
+import "./menu";
 import "./scrollSpy";
 import "./inputFile";
 import "./ripple";

@@ -118,8 +118,8 @@
     background: currentColor;
     position: absolute;
     left: 50%;
-    top: calc(50% + 8px);
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-50%,calc(-50% + 8px));
     border-radius: 2px;
     transition: .3s ease-out;
   }
@@ -130,10 +130,16 @@
     background: currentColor;
     position: absolute;
     left: 50%;
-    top: calc(50% - 8px);
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-50%,calc(-50% - 8px));
     border-radius: 2px;
     transition: .3s ease-out;
+  }
+  .header__toggle_opened::before {
+    transform: translate(-50%,-50%) rotate(45eg);
+  }
+  .header__toggle_opened::after {
+    transform: translate(-50%,-50%) rotate(-45eg);
   }
 }
 
@@ -198,9 +204,14 @@
     top: 100%;
     background-color: #fbfbfb;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 13%);
-    padding: 16px;
+    padding: 20px;
     margin: 0;
+    list-style: none;
     width: 100%;
+
+    &_opened {
+      display: block;
+    }
   }
 
   .header__menu li {
