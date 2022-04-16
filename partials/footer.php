@@ -37,7 +37,7 @@
       </ul>
       <div class="footer__counters">
         <div class="footer__counters-item">
-          
+        counters
         </div>
         <div class="footer__counters-item">
           <a href="https://domenart-studio.ru/" class="footer-creator" target="_blank">
