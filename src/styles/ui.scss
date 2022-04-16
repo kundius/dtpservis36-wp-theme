@@ -217,6 +217,11 @@ iframe {
   height: 42px;
   position: absolute;
   display: block;
+
+  @include below(sm) {
+    width: 31px;
+    height: 32px;
+  }
 }
 
 .ui-button-primary__plus {

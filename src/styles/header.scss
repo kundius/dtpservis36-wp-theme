@@ -297,6 +297,11 @@
   @include below(md) {
     top: 80px;
   }
+
+  @include below(sm) {
+    top: 60px;
+    right: 8px;
+  }
 }
 
 .messengers__item {
@@ -322,6 +327,14 @@
   @include below(md) {
     width: 48px;
     height: 48px;
+  }
+
+  @include below(sm) {
+    width: 36px;
+    height: 36px;
+    &::before {
+      transform: scale(0.8);
+    }
   }
 }
 
@@ -363,7 +376,7 @@
     width: 32px;
     height: 33px;
   }
-  
+
   &:hover {
     background-image: -ms-linear-gradient( 90deg, #29a51a 0%, #238f16 100%);
     box-shadow: 4.286px 2.575px 9px 0px rgba(41, 167, 26, 0.48);
