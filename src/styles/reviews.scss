@@ -6,6 +6,11 @@
   max-width: 100%;
   padding-top: 57px;
   padding-bottom: 25px;
+
+  @include below(sm) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 @keyframes animationOut {
@@ -47,6 +52,10 @@
   right: 0;
   background: #c7c7c7;
   height: 400px;
+
+  @include below(sm) {
+    height: 100%;
+  }
 }
 
 .reviews__layout {
@@ -56,6 +65,10 @@
 .reviews__layout-content {
   flex-grow: 1;
   position: relative;
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .reviews__layout-info {
@@ -68,6 +81,11 @@
     width: 260px;
     margin-left: 30px;
   }
+
+  @include below(sm) {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .reviews-info__title {
@@ -78,6 +96,10 @@
   letter-spacing: 0.075em;
   font-weight: bold;
   margin-bottom: 53px;
+
+  @include below(sm) {
+    margin-bottom: 40px;
+  }
 }
 
 .reviews-info__date {
@@ -214,6 +236,11 @@
     .reviews-info__send-pronoun {
       display: none;
     }
+  }
+
+  @include below(sm) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
