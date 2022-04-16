@@ -24,7 +24,7 @@
   }
 
   @include below(md) {
-    font-size: 50%;
+    font-size: 48%;
   }
 }
 
@@ -91,9 +91,9 @@
   transform: translateX(-50%);
 
   @include below(md) {
-    font-size: calc(24em / 16);
-    line-height: calc(30em / 24);
-    top: calc(30em / 24);
+    font-size: calc(28em / 16);
+    line-height: calc(30em / 28);
+    top: calc(30em / 28);
   }
 }
 
@@ -101,17 +101,8 @@
   position: absolute;
   right: calc(45em / 16);
   bottom: calc(25em / 16);
-  // width: calc(220em / 16);
-  // height: calc(220em / 16);
-  // display: flex;
-  // align-items: flex-end;
-  // justify-content: flex-end;
 }
 
 .additional-item__image img {
   display: block;
-  // max-width: 100%;
-  // max-height: 100%;
-  // width: auto;
-  // height: auto;
 }
