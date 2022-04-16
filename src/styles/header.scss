@@ -193,5 +193,35 @@
 @include below(md) {
   .header__menu {
     display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fbfbfb;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 13%);
+    padding: 16px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .header__menu li {
+  }
+
+  .header__menu li + li {
+    margin-top: 16px;
+  }
+
+  .header__menu li a {
+    color: #161718;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    line-height: 2;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    text-decoration: none;
+  }
+
+  .header__menu li a.active {
+    color: #ff8825;
   }
 }
