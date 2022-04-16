@@ -229,7 +229,7 @@
 .reviews-info__nav {
   display: flex;
 
-  @include above(sm) {
+  @include below(sm) {
     justify-content: center;
   }
 }
