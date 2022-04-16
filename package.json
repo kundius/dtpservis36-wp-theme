@@ -27,6 +27,7 @@
     "yargs": "^17.4.0"
   },
   "dependencies": {
+    "@sidsbrmnn/scrollspy": "^1.1.0",
     "hystmodal": "^0.5.1",
     "inputmask": "^5.0.7",
     "lazysizes": "^5.3.2",

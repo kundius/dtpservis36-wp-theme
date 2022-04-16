@@ -14,7 +14,7 @@ Template Name: Главная
     <div class="ui-wrapper">
       <?php get_template_part('partials/header') ?>
 
-      <section class="intro">
+      <section class="intro" data-scrollspy-section id="services">
         <div class="ui-container">
           <div class="intro-special">
             <div class="intro-special__title">
@@ -123,7 +123,7 @@ Template Name: Главная
           </div>
         </section>
 
-        <section class="why-we">
+        <section class="why-we" data-scrollspy-section id="advantages">
           <div class="ui-container">
             <div class="why-we__layout">
               <div class="why-we__layout-title">
@@ -149,7 +149,7 @@ Template Name: Главная
         <script>
           var theme_reviews = <?php echo json_encode($reviews) ?>;
         </script>
-        <section class="reviews">
+        <section class="reviews" data-scrollspy-section id="reviews">
           <div class="ui-container">
             <div class="reviews__layout">
               <div class="reviews__layout-content">
@@ -234,7 +234,7 @@ Template Name: Главная
       </div>
       
       <?php $contacts = get_field('theme_contacts_items', 'options') ?>
-      <section class="section-contacts">
+      <section class="section-contacts" data-scrollspy-section id="contacts">
         <div class="section-contacts__bg-pattern"></div>
 
         <div class="ui-container">

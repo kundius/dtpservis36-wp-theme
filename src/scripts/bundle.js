@@ -6,7 +6,7 @@
 import "./modal";
 import "./form";
 import "./drawer";
-import "./menuScrollTo";
+import "./scrollSpy";
 import "./inputFile";
 import "./ripple";
 import "./inputMask";

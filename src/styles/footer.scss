@@ -59,12 +59,12 @@
   display: block;
 }
 
-.footer__menu li._active a {
+.footer__menu li.active a {
   background: #ff8a00;
   color: #fff;
 }
 
-.footer__menu li._active a::after {
+.footer__menu li.active a::after {
   display: none;
 }
 

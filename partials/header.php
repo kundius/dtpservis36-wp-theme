@@ -10,16 +10,16 @@
     <div class="header__sep-1"></div>
     <ul class="header__menu">
       <li>
-        <a href="#">Услуги</a>
+        <a href="#services">Услуги</a>
       </li>
       <li>
-        <a href="#">Преимущества</a>
+        <a href="#advantages">Преимущества</a>
       </li>
       <li>
-        <a href="#">Отзывы</a>
+        <a href="#reviews">Отзывы</a>
       </li>
       <li>
-        <a href="#">Контакты</a>
+        <a href="#contacts">Контакты</a>
       </li>
     </ul>
     <div class="header__sep-2"></div>

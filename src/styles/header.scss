@@ -112,6 +112,14 @@
   opacity: 1;
 }
 
+.header__menu li a.active {
+  color: #000;
+}
+
+.header__menu li a.active::after {
+  opacity: 1;
+}
+
 .header__phone {
   display: flex;
   flex-direction: column;

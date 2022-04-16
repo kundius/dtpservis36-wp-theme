@@ -3,16 +3,16 @@
     <div class="footer__primary">
       <ul class="footer__menu">
         <li>
-          <a href="#">Услуги</a>
+          <a href="#services">Услуги</a>
         </li>
         <li>
-          <a href="#">Преимущества</a>
+          <a href="#advantages">Преимущества</a>
         </li>
         <li>
-          <a href="#">Отзывы</a>
+          <a href="#reviews">Отзывы</a>
         </li>
-        <li class="_active">
-          <a href="#">Контакты</a>
+        <li>
+          <a href="#contacts">Контакты</a>
         </li>
       </ul>
 
@@ -40,7 +40,7 @@
           
         </div>
         <div class="footer__counters-item">
-          <a href="#" class="footer-creator">
+          <a href="https://domenart-studio.ru/" class="footer-creator" target="_blank">
             <img src="<?php bloginfo('template_url') ?>/dist/images/creator.png" alt="" />
           </a>
         </div>
