@@ -137,6 +137,7 @@
 
   @include below(md) {
     order: -1;
+    width: 100%;
     margin-bottom: 20px;
     justify-content: space-around;
     flex-direction: row;
