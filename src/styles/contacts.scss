@@ -172,6 +172,10 @@
 
 .contacts-group {
   width: calc(50% - 40px);
+
+  @include below(lg) {
+    width: calc(50% - 20px);
+  }
 }
 
 .contacts-group__title {
