@@ -231,6 +231,10 @@
   @include below(lg) {
     padding: 35px;
   }
+
+  @include below(md) {
+    padding: 25px;
+  }
 }
 
 .reviews-preview__content-video {
@@ -255,7 +259,7 @@
 
 .reviews-preview__content-text {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.333;
   color: #252525;
 
   .reviews-preview_animation-out & {
@@ -266,6 +270,10 @@
   .reviews-preview_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
+  }
+
+  @include below(md) {
+    font-size: 16px;
   }
 }
 
@@ -282,6 +290,11 @@
     margin-top: 10px;
     margin-left: 20px;
     width: 200px;
+  }
+
+  @include below(md) {
+    margin: 0 auto 20px;
+    float: none;
   }
 }
 
@@ -302,12 +315,21 @@
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
+
+  @include below(md) {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 .reviews-preview__figure-more {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+
+  @include below(md) {
+    margin-top: 12px;
+  }
 }
 
 .reviews-preview__more {
@@ -380,6 +402,10 @@
 
   @include below(lg) {
     padding: 35px;
+  }
+
+  @include below(md) {
+    padding: 25px;
   }
 }
 
@@ -475,6 +501,11 @@
     margin-left: 20px;
     width: 200px;
   }
+
+  @include below(md) {
+    margin: 0 auto 20px;
+    float: none;
+  }
 }
 
 .reviews-details__figure-image {
@@ -493,5 +524,10 @@
   .reviews-details_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
+  }
+
+  @include below(md) {
+    width: 140px;
+    height: 140px;
   }
 }

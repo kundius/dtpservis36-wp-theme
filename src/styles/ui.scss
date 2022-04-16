@@ -37,6 +37,16 @@ body {
     }
   }
 
+  @include below(md) {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 712px;
+
+    &_large {
+      width: 920px;
+    }
+  }
+
   @include below(sm) {
     padding-left: 8px;
     padding-right: 8px;
