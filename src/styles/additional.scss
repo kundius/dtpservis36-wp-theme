@@ -26,6 +26,10 @@
   @include below(md) {
     font-size: 48%;
   }
+
+  @include below(sm) {
+    padding: 30px 0 20px 0;
+  }
 }
 
 .additional__title {
@@ -36,6 +40,11 @@
   color: #969696;
   font-weight: bold;
   margin-bottom: 55px;
+
+  @include below(sm) {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
 }
 
 .additional__grid {
@@ -43,12 +52,23 @@
   flex-wrap: wrap;
   margin-top: calc(-95em / 16);
   margin-left: calc(-95em / 16);
+
+  @include below(sm) {
+    margin-top: calc(-25em / 16);
+    margin-left: calc(-25em / 16);
+  }
 }
 
 .additional__grid-cell {
   padding-top: calc(95em / 16);
   padding-left: calc(95em / 16);
   width: calc(100% / 3);
+
+  @include below(sm) {
+    padding-top: calc(25em / 16);
+    padding-left: calc(25em / 16);
+    width: 100%;
+  }
 }
 
 .additional-item {
