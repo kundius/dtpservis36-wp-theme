@@ -1,14 +1,42 @@
-import scrollSpy from "@sidsbrmnn/scrollspy";
+// import scrollSpy from "@sidsbrmnn/scrollspy";
 
-const options = {
-  sectionSelector: "[data-scrollspy-section]",
-  targetSelector: "a",
-  offset: window.innerHeight / 2,
-  activeClass: "active",
-};
+// const options = {
+//   sectionSelector: "[data-scrollspy-section]",
+//   targetSelector: "a",
+//   offset: window.innerHeight / 2,
+//   activeClass: "active",
+// };
 
-scrollSpy(document.querySelector(".header__menu"), options);
-scrollSpy(document.querySelector(".footer__menu"), options);
+// scrollSpy(document.querySelector(".header__menu"), options);
+// scrollSpy(document.querySelector(".footer__menu"), options);
+
+const section = document.querySelectorAll("[data-scrollspy-section]");
+let sections = {};
+let i = 0;
+
+Array.prototype.forEach.call(section, function(e) {
+  sections[e.id] = e.offsetTop;
+});
+
+const links = document.querySelectorAll(".header__menu a, .footer__menu a") || []
+
+const onScroll = () => {
+  const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+  for (i in sections) {
+    if (sections[i] <= scrollPosition) {
+      links.forEach((link) => {
+        link.classList.remove('active')
+
+        if (link.hash === `#${sections[i].id}`) {
+          link.classList.add('active')
+        }
+      })
+    }
+  }
+}
+
+window.addEventListener('scroll', onScroll)
 
 // let section = document.querySelectorAll("[data-scrollspy-section]"); // get all <section> elements
 // let menuLinks = document.querySelectorAll(".header__menu a, .footer__menu a"); // get all <a> inside <menu> inside <header> element
