@@ -18,6 +18,10 @@
     background: rgba(255,247,251,.12);
     transform: skewX(20deg);
   }
+
+  @include below(lg) {
+    font-size: 80%;
+  }
 }
 
 .additional__title {
