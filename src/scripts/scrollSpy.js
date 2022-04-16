@@ -1,4 +1,4 @@
-import { throttle } from './throttle'
+import { throttle } from "./throttle";
 
 const links =
   document.querySelectorAll(".header__menu a, .footer__menu a") || [];
@@ -16,8 +16,7 @@ links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
 
-    const offset =
-      prepared[link.hash] + window.pageYOffset - header.clientHeight;
+    const offset = prepared[link.hash] - header.clientHeight;
 
     window.scrollTo({
       top: offset,
