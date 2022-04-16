@@ -1,5 +1,6 @@
 <header class="header">
   <div class="ui-container ui-container_large header__container">
+    <button class="header__toggle"></button>
     <a href="/" class="header__logo">
       <img src="<?php bloginfo('template_url') ?>/dist/images/logo.png" alt="<?php bloginfo('name') ?>" />
     </a>
