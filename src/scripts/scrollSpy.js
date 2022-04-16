@@ -26,7 +26,6 @@ links.forEach((link) => {
 });
 
 const onScroll = () => {
-  console.log('onScroll')
   const scrollPosition =
     document.documentElement.scrollTop || document.body.scrollTop;
 
