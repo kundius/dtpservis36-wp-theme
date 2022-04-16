@@ -90,7 +90,7 @@
   @include below(sm) {
     border-radius: 36px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 8px 0;
   }
 }
 
@@ -155,12 +155,6 @@
     &::after {
       width: 4px;
     }
-  }
-}
-
-@media all and (max-width:767px) {
-  .hystmodal__window {
-    margin: 0;
   }
 }
 
