@@ -217,7 +217,7 @@ Template Name: Главная
                 </div>
                 <div class="reviews-info__send">
                   <button class="ui-button-primary" data-hystmodal="#modal-review-form">
-                    Добавиьте свой отзыв
+                    Добавьте <span>свой</span> отзыв
                     <span class="ui-button-primary__plus"></span>
                   </button>
                 </div>
