@@ -159,19 +159,20 @@
 }
 
 .reviews-info__image {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 12px;
   background-color: #ccc;
   border-radius: 50%;
   background-position: 50% 50%;
   background-size: cover;
 
-  .reviews-preview_animation-out & {
+  .reviews_animation-out & {
     animation: animationOut 400ms ease;
     animation-fill-mode: forwards;
   }
   
-  .reviews-preview_animation-in & {
+  .reviews_animation-in & {
     animation: animationIn 400ms ease;
     animation-fill-mode: forwards;
   }
