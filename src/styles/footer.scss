@@ -158,6 +158,10 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
+
+  @include below(lg) {
+    width: auto;
+  }
 }
 
 .footer__counters-item + .footer__counters-item {

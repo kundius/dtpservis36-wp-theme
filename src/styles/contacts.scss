@@ -109,6 +109,10 @@
     border-right: 12px solid transparent;
     border-top: 12px solid rgba(46, 48, 53, 0.4);
   }
+
+  @include below(lg) {
+    padding: 40px 40px 25px;
+  }
 }
 
 .contacts-body__groups {
