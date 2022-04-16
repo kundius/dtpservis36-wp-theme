@@ -128,6 +128,35 @@
   margin-top: 16px;
   margin-bottom: 16px;
   // overflow: hidden;
+
+  @include below(sm) {
+    height: auto;
+  }
+}
+
+.reviews-info__more {
+  margin-top: 16px;
+}
+
+.reviews-info__more-button {
+  font-size: 14px;
+  color: #39c;
+  text-decoration: underline;
+  letter-spacing: 0.025em;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #ff8825;
+  }
+
+  @include above(sm) {
+    display: none;
+  }
 }
 
 .reviews-info__name {
