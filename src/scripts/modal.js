@@ -1,6 +1,6 @@
 import HystModal from "hystmodal";
 
-const modal = new HystModal({
+export const modal = new HystModal({
   linkAttributeName: "data-hystmodal",
 });
 

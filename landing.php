@@ -248,6 +248,20 @@ Template Name: Главная
             </div>
           </div>
         </div>
+
+        <div class="hystmodal" id="modal-review" aria-hidden="true">
+          <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+              <button data-hystclose class="hystmodal__close"></button>
+
+              <div class="hystmodal__title" id="modal-review-title">
+              </div>
+
+              <div class="hystmodal__content" id="modal-review-content">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       
       <?php $contacts = get_field('theme_contacts_items', 'options') ?>

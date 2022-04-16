@@ -1,3 +1,5 @@
+import { modal } from './modal'
+
 function init (reviews) {
   const wrapper = document.querySelector('.reviews')
   const buttonMoreWrap = document.querySelector('.reviews-preview__figure-more')
@@ -112,7 +114,13 @@ function init (reviews) {
   })
 
   infoButtonMore.addEventListener('click', () => {
-    showDetails()
+    const modalTitle = document.getElementById('modal-review-title')
+    const modalContent = document.getElementById('modal-review-content')
+    
+    modalTitle.innerHTML = reviews[active].name
+    modalContent.innerHTML = reviews[active].video + reviews[active].content
+
+    modal.open("#modal-review");
   })
 
   buttonClose.addEventListener('click', () => {
