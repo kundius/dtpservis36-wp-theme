@@ -7,7 +7,7 @@
   }
 
   @include below(md) {
-    font-size: 57%;
+    font-size: 56%;
   }
 }
 
@@ -63,9 +63,9 @@
   max-width: calc(380em / 18);
 
   @include below(md) {
-    font-size: calc(24em / 16);
-    line-height: calc(30em / 24);
-    max-width: calc(380em / 24);
+    font-size: calc(22em / 16);
+    line-height: calc(30em / 22);
+    max-width: calc(380em / 22);
   }
 }
 

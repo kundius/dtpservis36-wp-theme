@@ -150,6 +150,7 @@
   @include below(md) {
     padding-left: 12px;
     padding-right: 12px;
+    text-align: center;
     &::before {
       display: none;
     }
