@@ -4,7 +4,8 @@ function init (reviews) {
   const wrapper = document.querySelector('.reviews')
   const buttonMoreWrap = document.querySelector('.reviews-preview__figure-more')
   const buttonMore = document.querySelector('.reviews-preview__more')
-  const infoButtonMore = document.querySelector('.reviews-info__more-button')
+  const infoButtonMore = document.querySelector('.reviews-info__more')
+  const infoImage = document.querySelector('.reviews-info__image')
   const buttonClose = document.querySelector('.reviews-details__close')
   const buttonLeft = document.querySelector('.reviews-info__nav-left')
   const buttonRight = document.querySelector('.reviews-info__nav-right')
@@ -33,6 +34,7 @@ function init (reviews) {
       name.innerHTML = reviews[index].name
       description.innerHTML = reviews[index].description
       date.innerHTML = reviews[index].date
+      infoImage.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
       
       previewExcerpt.innerHTML = reviews[index].excerpt
       previewVideo.innerHTML = reviews[index].video

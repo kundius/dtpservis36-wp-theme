@@ -200,6 +200,7 @@ Template Name: Главная
                   <?php echo $title ?>
                 </div>
                 <?php endif; ?>
+                <div class="reviews-info__image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
                 <div class="reviews-info__date">
                   <?php echo $reviews[0]['date'] ?>
                 </div>
@@ -210,11 +211,9 @@ Template Name: Главная
                   <div class="reviews-info__desc">
                     <?php echo $reviews[0]['description'] ?>
                   </div>
-                  <div class="reviews-info__more">
-                    <button class="reviews-info__more-button">
-                      читать отзыв полностью
-                    </button>
-                  </div>
+                  <button class="reviews-info__more">
+                    читать отзыв полностью
+                  </button>
                 </div>
                 <div class="reviews-info__nav">
                   <button class="reviews-info__nav-left"></button>

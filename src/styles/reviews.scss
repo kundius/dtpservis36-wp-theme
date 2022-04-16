@@ -137,13 +137,6 @@
 
 .reviews-info__more {
   margin-top: 16px;
-
-  @include above(sm) {
-    display: none;
-  }
-}
-
-.reviews-info__more-button {
   font-size: 14px;
   color: #39c;
   text-decoration: underline;
@@ -154,9 +147,37 @@
   border: 0;
   background: transparent;
   cursor: pointer;
+  display: inline-block;
 
   &:hover {
     color: #ff8825;
+  }
+
+  @include above(sm) {
+    display: none;
+  }
+}
+
+.reviews-info__image {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  .reviews-preview_animation-out & {
+    animation: animationOut 400ms ease;
+    animation-fill-mode: forwards;
+  }
+  
+  .reviews-preview_animation-in & {
+    animation: animationIn 400ms ease;
+    animation-fill-mode: forwards;
+  }
+
+  @include above(sm) {
+    display: none;
   }
 }
 
@@ -215,6 +236,11 @@
     z-index: 2;
     background: #f8f6f6;
   }
+
+  @include below(sm) {
+    height: 40px;
+    width: 50px;
+  }
 }
 
 .reviews-info__nav-left {
@@ -229,7 +255,13 @@
     width: 13px;
     height: 22px;
     transform: translate(-50%, -50%);
+    background-size: cover;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='13px' height='22px'%3E%3Cpath fill-rule='evenodd' fill='rgb(86, 86, 86)' d='M12.156,4.878 L6.35,10.999 L12.156,17.121 C13.133,18.97 13.133,19.680 12.156,20.656 C11.180,21.633 9.597,21.633 8.621,20.656 L0.843,12.878 C0.612,12.647 0.508,12.419 0.485,12.193 C0.106,11.230 0.8,9.955 0.843,9.121 L8.621,1.343 C9.597,0.366 11.180,0.366 12.156,1.343 C13.133,2.319 13.133,3.902 12.156,4.878 Z'/%3E%3C/svg%3E");
+
+    @include below(sm) {
+      width: 10px;
+      height: 18px;
+    }
   }
 }
 
@@ -245,7 +277,13 @@
     width: 13px;
     height: 22px;
     transform: translate(-50%, -50%);
+    background-size: cover;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='13px' height='22px'%3E%3Cpath fill-rule='evenodd' fill='rgb(86, 86, 86)' d='M12.156,12.878 L4.378,20.656 C3.402,21.633 1.819,21.633 0.843,20.656 C0.133,19.680 0.133,18.97 0.843,17.121 L6.964,10.999 L0.843,4.878 C0.133,3.902 0.133,2.319 0.843,1.343 C1.819,0.366 3.402,0.366 4.378,1.343 L12.156,9.121 C12.387,9.352 12.491,9.579 12.514,9.806 C13.106,10.769 12.991,12.44 12.156,12.878 Z'/%3E%3C/svg%3E");
+    
+    @include below(sm) {
+      width: 10px;
+      height: 18px;
+    }
   }
 }
 
