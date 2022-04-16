@@ -4,6 +4,7 @@ const options = {
   sectionSelector: "[data-scrollspy-section]",
   targetSelector: "a",
   offset: 64,
+  activeClass: "active",
 };
 
 scrollSpy(document.querySelector(".header__menu"), options);
