@@ -136,10 +136,10 @@
     transition: .3s ease-out;
   }
   .header__toggle_opened::before {
-    transform: translate(-50%,-50%) rotate(45eg);
+    transform: translate(-50%,-50%) rotate(45deg);
   }
   .header__toggle_opened::after {
-    transform: translate(-50%,-50%) rotate(-45eg);
+    transform: translate(-50%,-50%) rotate(-45deg);
   }
 }
 
