@@ -129,7 +129,7 @@
         <div class="modal-form__submit">
           <button type="submit" class="ui-button-secondary">
             <span class="ui-loader-square modal-form__loader"></span>
-            Отправить
+            Отправить отзыв
           </button>
         </div>
 

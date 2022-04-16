@@ -72,6 +72,7 @@ body {
   line-height: 1;
   padding-top: 25px;
   transition: .3s ease;
+  display: block;
 }
 
 .ui-input-field__input:focus {
@@ -90,23 +91,30 @@ body {
   background: #fff;
   border-radius: 36px;
   text-align: center;
-  padding: 0 20px;
+  padding: 25px 20px;
   color: #585858;
   font-family: inherit;
   font-size: 18px;
   letter-spacing: 0.075em;
   line-height: 1;
-  padding-top: 25px;
   transition: .3s ease;
+  display: block;
 }
 
 .ui-input-field__textarea:focus {
-  padding-top: 0;
   background: #f8f9fe;
 }
 
-.ui-input-field__textarea:focus + .ui-input-field__label {
+// .ui-input-field__textarea:focus + .ui-input-field__label {
+//   opacity: 0;
+// }
+
+.ui-input-field__textarea + .ui-input-field__label {
   opacity: 0;
+}
+
+.ui-input-field__textarea:placeholder-shown + .ui-input-field__label {
+  opacity: 1;
 }
 
 .ui-button-primary {

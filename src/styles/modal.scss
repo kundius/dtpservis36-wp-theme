@@ -151,6 +151,7 @@
   font-weight: bold;
   line-height: 1;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .hystmodal__content {
@@ -172,11 +173,11 @@
 }
 
 .modal-form__field + .modal-form__field {
-  margin-top: 7px;
+  margin-top: 12px;
 }
 
 .modal-form__file {
-  margin-top: 7px;
+  margin-top: 12px;
 }
 
 .modal-form__note {
@@ -189,12 +190,12 @@
 }
 
 .modal-form__rules {
-  margin-top: 12px;
+  margin-top: 16px;
   color: #404040;
 }
 
 .modal-form__submit {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
