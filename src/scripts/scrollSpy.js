@@ -43,3 +43,5 @@ const onScroll = () => {
 };
 
 window.addEventListener("scroll", throttle(onScroll, 100));
+
+onScroll()
