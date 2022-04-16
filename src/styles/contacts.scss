@@ -17,28 +17,32 @@
   transform: skew(26deg);
   z-index: 2;
   pointer-events: none;
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    display: block;
-    right: 100%;
-    top: -185px;
-    height: 405px;
-    width: 100vw;
-    background-color: rgba(250, 241, 236, 0.502);
-  }
+.section-contacts__bg-pattern::before {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 100%;
+  top: -185px;
+  height: 405px;
+  width: 100vw;
+  background-color: rgba(250, 241, 236, 0.502);
 
-  &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    left: 100%;
-    bottom: 0px;
-    height: 315px;
-    width: 100vw;
-    background-color: rgba(250, 241, 236, 0.502);
+  @include below(md) {
+    top: -55px;
   }
+}
+
+.section-contacts__bg-pattern::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 100%;
+  bottom: 0px;
+  height: 315px;
+  width: 100vw;
+  background-color: rgba(250, 241, 236, 0.502);
 }
 
 .section-contacts::before {

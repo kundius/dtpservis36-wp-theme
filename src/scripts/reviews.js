@@ -69,7 +69,7 @@ function init (reviews) {
     let height = rect.height
 
     if (window.matchMedia('(max-width: 959px)').matches) {
-      width = window.offsetWidth - left * 2
+      width = window.innerWidth - left * 2
     }
 
     detailsWrap.style.top = `${top}px`
