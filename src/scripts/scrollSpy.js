@@ -3,7 +3,7 @@ import scrollSpy from "@sidsbrmnn/scrollspy";
 const options = {
   sectionSelector: "[data-scrollspy-section]",
   targetSelector: "a",
-  offset: 264,
+  offset: window.innerHeight / 2,
   activeClass: "active",
 };
 
