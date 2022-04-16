@@ -283,11 +283,20 @@
 
 .messengers {
   position: fixed;
-  top: 110px;
-  right: 10px;
+  top: 108px;
+  left: calc(50% + 662px);
   display: flex;
   flex-direction: column;
   z-index: 250;
+  
+  @media (max-width: 1490px) {
+    left: auto;
+    right: 12px;
+  }
+
+  @include below(md) {
+    top: 80px;
+  }
 }
 
 .messengers__item {
@@ -298,24 +307,33 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+
   &::before {
     content: '';
     background-size: cover;
     background-position: 50% 50%;
     display: block;
   }
+
   & + .messengers__item {
     margin-top: 8px;
+  }
+
+  @include below(md) {
+    width: 48px;
+    height: 48px;
   }
 }
 
 .messengers__item_phone {
   background: #d18972;
+
   &::before {
     background-image: url('../images/icon-messengers-phone.svg');
     width: 21px;
     height: 27px;
   }
+
   &:hover {
     background-image: linear-gradient( 90deg, #fc7605 0%, #da6604 100%);
     box-shadow: 4.286px 2.575px 9px 0px rgba(238, 111, 5, 0.48);
@@ -324,11 +342,13 @@
 
 .messengers__item_viber {
   background: #745084;
+
   &::before {
     background-image: url('../images/icon-messengers-viber.svg');
     width: 33px;
     height: 34px;
   }
+
   &:hover {
     background-image: linear-gradient( 90deg, #8f54a8 0%, #7c4992 100%);
     box-shadow: 4.286px 2.575px 9px 0px rgba(133, 79, 156, 0.48);
@@ -337,11 +357,13 @@
 
 .messengers__item_whatsapp {
   background: #61915f;
+
   &::before {
     background-image: url('../images/icon-messengers-whatsapp.svg');
     width: 32px;
     height: 33px;
   }
+  
   &:hover {
     background-image: -ms-linear-gradient( 90deg, #29a51a 0%, #238f16 100%);
     box-shadow: 4.286px 2.575px 9px 0px rgba(41, 167, 26, 0.48);
