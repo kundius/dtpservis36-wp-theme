@@ -122,6 +122,11 @@
   position: absolute;
   right: calc(45em / 16);
   bottom: calc(25em / 16);
+
+  @include below(sm) {
+    transform: scale(0.8);
+    transform-origin: 100% 100%;
+  }
 }
 
 .additional-item__image img {
