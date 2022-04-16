@@ -113,7 +113,8 @@ body {
   opacity: 0;
 }
 
-.ui-input-field__textarea:placeholder-shown + .ui-input-field__label {
+.ui-input-field__textarea:placeholder-shown + .ui-input-field__label,
+.ui-input-field__textarea:empty + .ui-input-field__label {
   opacity: 1;
 }
 
