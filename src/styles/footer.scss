@@ -10,6 +10,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include below(sm) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer__menu {
@@ -17,6 +22,10 @@
   margin: 0;
   list-style: none;
   display: flex;
+
+  @include below(sm) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer__menu li + li {
@@ -100,6 +109,10 @@
   @include below(md) {
     flex-wrap: wrap;
   }
+
+  @include below(sm) {
+    padding: 12px 0;
+  }
 }
 
 .footer__copyright {
@@ -108,6 +121,11 @@
   color: #666;
   letter-spacing: 0.05em;
   width: 360px;
+
+  @include below(sm) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .footer__copyright span {
@@ -142,6 +160,10 @@
     justify-content: space-around;
     flex-direction: row;
   }
+
+  @include below(sm) {
+    flex-direction: column;
+  }
 }
 
 .footer__links li + li {
@@ -149,6 +171,10 @@
 
   @include below(md) {
     margin-top: 0;
+  }
+
+  @include below(sm) {
+    margin-top: 8px;
   }
 }
 
@@ -158,8 +184,8 @@
   font-size: 12px;
   color: #666;
   letter-spacing: 0.05em;
-  line-height: 22px;
-  padding: 0 10px;
+  line-height: 1;
+  padding: 5px 10px;
   border-radius: 11px;
 }
 
@@ -177,6 +203,10 @@
 
   @include below(lg) {
     width: auto;
+  }
+
+  @include below(sm) {
+    width: 100%;
   }
 }
 

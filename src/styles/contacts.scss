@@ -249,6 +249,10 @@
   padding-bottom: 7px;
   border-bottom: 1px solid rgba(227, 227, 227, 0.471);
   margin-top: 26px;
+
+  @include below(md) {
+    margin-top: 20px;
+  }
 }
 
 .contacts-group__data {
