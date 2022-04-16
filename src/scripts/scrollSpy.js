@@ -10,6 +10,7 @@
 // scrollSpy(document.querySelector(".header__menu"), options);
 // scrollSpy(document.querySelector(".footer__menu"), options);
 
+const links = document.querySelectorAll(".header__menu a, .footer__menu a") || []
 const section = document.querySelectorAll("[data-scrollspy-section]");
 let sections = {};
 let i = 0;
@@ -18,13 +19,11 @@ Array.prototype.forEach.call(section, function(e) {
   sections[e.id] = e.offsetTop;
 });
 
-const links = document.querySelectorAll(".header__menu a, .footer__menu a") || []
-
 const onScroll = () => {
   const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
   for (i in sections) {
-    if (sections[i] <= scrollPosition) {
+    if (sections[i] <= scrollPosition - window.innerHeight / 2) {
       links.forEach((link) => {
         link.classList.remove('active')
 
