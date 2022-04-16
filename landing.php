@@ -100,8 +100,7 @@ Template Name: Главная
                     <img
                       src="<?php bloginfo('template_url') ?>/dist/images/additional-1.svg"
                       alt=""
-                      width="10.4375em"
-                      height="13.0625em"
+                      style="width: calc(167em / 16); height: calc(209em / 16);"
                     />
                   </div>
                 </div>
@@ -111,7 +110,11 @@ Template Name: Главная
                   <div class="additional-item__number">2</div>
                   <div class="additional-item__title">Юридическое сопровождение</div>
                   <div class="additional-item__image">
-                    <img src="<?php bloginfo('template_url') ?>/dist/images/additional-2.svg" alt="" />
+                    <img
+                      src="<?php bloginfo('template_url') ?>/dist/images/additional-2.svg"
+                      alt=""
+                      style="width: calc(159em / 16); height: calc(162em / 16);"
+                    />
                   </div>
                 </div>
               </div>
@@ -120,7 +123,11 @@ Template Name: Главная
                   <div class="additional-item__number">3</div>
                   <div class="additional-item__title">Оценка ущерба</div>
                   <div class="additional-item__image">
-                    <img src="<?php bloginfo('template_url') ?>/dist/images/additional-3.svg" alt="" />
+                    <img
+                      src="<?php bloginfo('template_url') ?>/dist/images/additional-3.svg"
+                      alt=""
+                      style="width: calc(164em / 16); height: calc(179em / 16);"
+                    />
                   </div>
                 </div>
               </div>
