@@ -55,8 +55,8 @@
   margin-left: calc(-95em / 16);
 
   @include below(sm) {
-    // margin-top: calc(-25em / 16);
-    // margin-left: calc(-25em / 16);
+    margin-top: calc(-50em / 16);
+    margin-left: calc(-50em / 16);
   }
 }
 
@@ -66,8 +66,8 @@
   width: calc(100% / 3);
 
   @include below(sm) {
-    // padding-top: calc(25em / 16);
-    // padding-left: calc(25em / 16);
+    padding-top: calc(50em / 16);
+    padding-left: calc(50em / 16);
     width: 50%;
   }
 }
