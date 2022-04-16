@@ -10,6 +10,7 @@ import "./menuScrollTo";
 import "./inputFile";
 import "./ripple";
 import "./inputMask";
+import "./inputField";
 import "./reviews";
 
 /**
