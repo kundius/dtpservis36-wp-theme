@@ -80,13 +80,9 @@ body {
   background: #f8f9fe;
 }
 
-.ui-input-field__input + .ui-input-field__label {
-  opacity: 0;
-}
-
 .ui-input-field__input:focus + .ui-input-field__label,
-.ui-input-field_empty .ui-input-field__input + .ui-input-field__label {
-  opacity: 1;
+.ui-input-field_dirty .ui-input-field__input + .ui-input-field__label {
+  opacity: 0;
 }
 
 .ui-input-field__textarea {
@@ -110,12 +106,8 @@ body {
   background: #f8f9fe;
 }
 
-.ui-input-field__textarea + .ui-input-field__label {
-  opacity: 0;
-}
-
 .ui-input-field__textarea:focus + .ui-input-field__label,
-.ui-input-field_empty .ui-input-field__textarea + .ui-input-field__label {
+.ui-input-field_dirty .ui-input-field__textarea + .ui-input-field__label {
   opacity: 1;
 }
 

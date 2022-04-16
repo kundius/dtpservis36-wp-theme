@@ -6,10 +6,10 @@ fields.forEach((field) => {
   input.addEventListener("input", (evt) => {
     const value = input.value;
 
-    if (!value) {
-      field.classList.add("ui-input-field_empty");
+    if (value) {
+      field.classList.add("ui-input-field_dirty");
     } else {
-      field.classList.remove("ui-input-field_empty");
+      field.classList.remove("ui-input-field_dirty");
     }
   });
 });
