@@ -97,7 +97,12 @@ Template Name: Главная
                   <div class="additional-item__number">1</div>
                   <div class="additional-item__title">Бесплатная консультация</div>
                   <div class="additional-item__image">
-                    <img src="<?php bloginfo('template_url') ?>/dist/images/additional-1.svg" alt="" />
+                    <img
+                      src="<?php bloginfo('template_url') ?>/dist/images/additional-1.svg"
+                      alt=""
+                      width="10.4375em"
+                      height="13.0625em"
+                    />
                   </div>
                 </div>
               </div>

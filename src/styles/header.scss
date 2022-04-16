@@ -46,6 +46,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @include below(lg) {
+    display: none;
+  }
 }
 
 .header__about li {

@@ -74,7 +74,7 @@
   font-size: calc(18em / 16);
   letter-spacing: 0.075em;
   color: #3c3c3c;
-  line-height: 30px;
+  line-height: calc(30em / 18);
   position: absolute;
   top: calc(30em / 18);
   left: 50%;
@@ -87,17 +87,17 @@
   position: absolute;
   right: calc(45em / 16);
   bottom: calc(25em / 16);
-  width: calc(220em / 16);
-  height: calc(220em / 16);
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  // width: calc(220em / 16);
+  // height: calc(220em / 16);
+  // display: flex;
+  // align-items: flex-end;
+  // justify-content: flex-end;
 }
 
-.additional-item__image {
+.additional-item__image img {
   display: block;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  // max-width: 100%;
+  // max-height: 100%;
+  // width: auto;
+  // height: auto;
 }
