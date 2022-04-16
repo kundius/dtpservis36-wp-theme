@@ -51,7 +51,7 @@
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     width: auto;
-    padding-top: calc(28em / 16);
+    padding-top: calc(60em / 16);
   }
 }
 
@@ -72,6 +72,8 @@
 
   @include below(sm) {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
