@@ -208,6 +208,17 @@ iframe {
   }
 }
 
+.ui-button-primary__call {
+  right: 0;
+  top: 0;
+  background: url('../images/icon-call.svg') no-repeat 50% 50%;
+  background-size: cover;
+  width: 41px;
+  height: 42px;
+  position: absolute;
+  display: block;
+}
+
 .ui-button-primary__plus {
   width: 38px;
   height: 38px;

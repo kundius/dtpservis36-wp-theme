@@ -153,18 +153,6 @@
   .ui-button-primary {
     width: 100%;
   }
-
-  &::before {
-    content: '';
-    right: 0;
-    top: 0;
-    background: url('../images/icon-call.svg') no-repeat 50% 50%;
-    background-size: cover;
-    width: 41px;
-    height: 42px;
-    position: absolute;
-    display: block;
-  }
 }
 
 .intro__urgent {
