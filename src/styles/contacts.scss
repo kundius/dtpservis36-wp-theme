@@ -190,6 +190,11 @@
   letter-spacing: 0.025em;
   font-weight: 900;
   position: relative;
+
+  @include below(md) {
+    font-size: 22px;
+    padding-left: 35px;
+  }
 }
 
 .contacts-group__title::before {
@@ -201,6 +206,11 @@
   top: -6px;
   background: url('../images/icon-marker.svg') no-repeat 50% 50%;
   background-size: cover;
+
+  @include below(md) {
+    width: 30px;
+    height: 40px;
+  }
 }
 
 .contacts-group__address {

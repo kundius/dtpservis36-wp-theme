@@ -96,6 +96,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include below(md) {
+    flex-wrap: wrap;
+  }
 }
 
 .footer__copyright {
@@ -130,10 +134,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include below(md) {
+    order: -1;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
 
 .footer__links li + li {
   margin-top: 15px;
+
+  @include below(md) {
+    margin-top: 0;
+  }
 }
 
 .footer__links li a {
