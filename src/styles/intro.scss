@@ -83,7 +83,7 @@
 
   @include below(sm) {
     padding-top: 20px;
-    padding-bottom: 28px;
+    padding-bottom: 10px;
     border-radius: 36px;
   }
 }
@@ -186,6 +186,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: 44px;
+
+  @include below(sm) {
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
 }
 
 .intro-advantages__item {
@@ -209,6 +214,13 @@
     text-align: center;
     &::before {
       display: none;
+    }
+  }
+
+  @include below(sm) {
+    width: 100%;
+    & + .intro-advantages__item {
+      margin-top: 20px;
     }
   }
 }
