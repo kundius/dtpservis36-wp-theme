@@ -172,9 +172,8 @@ Template Name: Главная
                     <div
                       class="reviews-preview__figure-more"
                       style="display: <?php echo ($reviews[0]['content'] ? 'block' : 'none') ?>"
-                      data-review-more-wrap
                     >
-                      <button class="reviews-preview__more" data-review-more-button>
+                      <button class="reviews-preview__more" >
                         читать отзыв полностью
                         <span class="reviews-preview__more-arrow"></span>
                       </button>
@@ -211,8 +210,8 @@ Template Name: Главная
                   <div class="reviews-info__desc">
                     <?php echo $reviews[0]['description'] ?>
                   </div>
-                  <div class="reviews-info__more" data-review-more-wrap>
-                    <button class="reviews-info__more-button" data-review-more-button>
+                  <div class="reviews-info__more">
+                    <button class="reviews-info__more-button">
                       читать отзыв полностью
                     </button>
                   </div>

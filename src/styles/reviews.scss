@@ -136,6 +136,10 @@
 
 .reviews-info__more {
   margin-top: 16px;
+
+  @include above(sm) {
+    display: none;
+  }
 }
 
 .reviews-info__more-button {
@@ -152,10 +156,6 @@
 
   &:hover {
     color: #ff8825;
-  }
-
-  @include above(sm) {
-    display: none;
   }
 }
 
