@@ -229,6 +229,10 @@
   flex-wrap: wrap;
   margin-top: 16px;
   gap: 40px;
+
+  @include below(md) {
+    gap: 20px;
+  }
 }
 
 .contacts-group__data-item {
