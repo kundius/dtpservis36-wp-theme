@@ -28,7 +28,7 @@
   }
 
   @include below(sm) {
-    padding: 30px 0 20px 0;
+    padding: 40px 0;
   }
 }
 
@@ -43,13 +43,14 @@
 
   @include below(sm) {
     font-size: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 }
 
 .additional__grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: c\;
   margin-top: calc(-95em / 16);
   margin-left: calc(-95em / 16);
 
@@ -67,7 +68,7 @@
   @include below(sm) {
     padding-top: calc(25em / 16);
     padding-left: calc(25em / 16);
-    width: 100%;
+    width: 50%;
   }
 }
 
