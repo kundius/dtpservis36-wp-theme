@@ -102,18 +102,23 @@
 
 @include below(md) {
   .header__toggle {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     position: relative;
+    margin-right: 24px;
+    background: #ff8825;
+    border: none;
+    color: #fff;
+    border-radius: 12px;
   }
   .header__toggle::before {
     content: "";
     width: 28px;
-    height: 3px;
+    height: 4px;
     background: currentColor;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: calc(50% + 8px);
     transform: translate(-50%,-50%);
     border-radius: 2px;
     transition: .3s ease-out;
@@ -121,11 +126,11 @@
   .header__toggle::after {
     content: "";
     width: 28px;
-    height: 3px;
+    height: 4px;
     background: currentColor;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: calc(50% - 8px);
     transform: translate(-50%,-50%);
     border-radius: 2px;
     transition: .3s ease-out;
