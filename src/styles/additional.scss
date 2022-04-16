@@ -22,6 +22,10 @@
   @include below(lg) {
     font-size: 80%;
   }
+
+  @include below(md) {
+    font-size: 50%;
+  }
 }
 
 .additional__title {
@@ -85,6 +89,12 @@
   width: 80%;
   text-align: center;
   transform: translateX(-50%);
+
+  @include below(md) {
+    font-size: calc(24em / 16);
+    line-height: calc(30em / 24);
+    top: calc(30em / 24);
+  }
 }
 
 .additional-item__image {

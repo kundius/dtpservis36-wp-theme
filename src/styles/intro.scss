@@ -146,6 +146,14 @@
     background-color: rgb(255, 136, 37);
     border-radius: 12px;
   }
+
+  @include below(md) {
+    padding-left: 12px;
+    padding-right: 12px;
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .intro-advantages__item-title {
