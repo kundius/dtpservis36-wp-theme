@@ -143,6 +143,11 @@
   width: 100%;
   text-align: center;
   letter-spacing: 0.025em;
+
+  @include below(sm) {
+    font-size: 26px;
+    margin-top: 48px;
+  }
 }
 
 .contacts-form {
@@ -165,6 +170,8 @@
   @include below(sm) {
     padding-bottom: 10px;
     border-radius: 36px;
+    margin-top: -75px;
+    padding-top: 93px;
   }
 }
 
