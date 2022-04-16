@@ -1,7 +1,9 @@
 function init(reviews) {
   const wrapper = document.querySelector(".reviews");
-  const buttonMoreWraps = document.querySelectorAll("[data-review-more-wrap]") || [];
-  const buttonMoreButtons = document.querySelectorAll("[data-review-more-button]") || [];
+  const buttonMoreWraps =
+    document.querySelectorAll("[data-review-more-wrap]") || [];
+  const buttonMoreButtons =
+    document.querySelectorAll("[data-review-more-button]") || [];
   const buttonClose = document.querySelector(".reviews-details__close");
   const buttonLeft = document.querySelector(".reviews-info__nav-left");
   const buttonRight = document.querySelector(".reviews-info__nav-right");
