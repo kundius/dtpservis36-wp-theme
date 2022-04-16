@@ -280,3 +280,76 @@
     color: #ff8825;
   }
 }
+
+.messengers {
+  position: fixed;
+  top: 110px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 250;
+}
+
+.messengers__item {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  border-radius: 50%;
+  align-items: c;
+  justify-content: center;
+  text-decoration: none;
+  &::before {
+    content: '';
+    background-size: cover;
+    background-position: 50% 50%;
+    display: block;
+  }
+  & + .messengers__item {
+    margin-top: 8px;
+  }
+}
+
+.messengers__item_phone {
+  background: #d18972;
+  &::before {
+    background-image: url('../images/icon-messengers-phone.svg');
+    width: 21px;
+    height: 27px;
+  }
+  &:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    box-shadow: 4.286px 2.575px 9px 0px rgba(238, 111, 5, 0.48);
+  }
+}
+
+.messengers__item_viber {
+  background: #745084;
+  &::before {
+    background-image: url('../images/icon-messengers-viber.svg');
+    width: 33px;
+    height: 34px;
+  }
+  &:hover {
+    // background-image: -moz-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    // background-image: -webkit-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    background-image: linear-gradient( 90deg, #8f56a6 0%, #7a488f 100%);
+    box-shadow: 4.286px 2.575px 9px 0px rgba(133, 79, 156, 0.48);
+  }
+}
+
+.messengers__item_whatsapp {
+  background: #61915f;
+  &::before {
+    background-image: url('../images/icon-messengers-whatsapp.svg');
+    width: 32px;
+    height: 33px;
+  }
+  &:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    box-shadow: 4.286px 2.575px 9px 0px rgba(41, 167, 26, 0.48);
+  }
+}

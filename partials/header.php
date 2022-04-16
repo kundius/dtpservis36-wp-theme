@@ -32,3 +32,9 @@
 </header>
 
 <div class="header-placeholder"></div>
+
+<div class="messengers">
+  <a href="tel:" class="messengers__item messengers__item_phone"></a>
+  <a href="tel:" class="messengers__item messengers__item_viber"></a>
+  <a href="tel:" class="messengers__item messengers__item_whatsapp"></a>
+</div>
