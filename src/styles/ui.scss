@@ -50,6 +50,11 @@ body {
   @include below(sm) {
     padding-left: 8px;
     padding-right: 8px;
+    width: 356px;
+
+    &_large {
+      width: 556px;
+    }
   }
 }
 
@@ -70,6 +75,10 @@ body {
   left: 50%;
   transform: translateX(-50%);
   transition: .3s ease;
+
+  @include below(sm) {
+    top: 8px;
+  }
 }
 
 .ui-input-field__input {
@@ -88,6 +97,12 @@ body {
   padding-top: 25px;
   transition: .3s ease;
   display: block;
+
+  @include below(sm) {
+    height: 60px;
+    padding-top: 18px;
+    font-size: 18px;
+  }
 }
 
 .ui-input-field__input:focus {
@@ -119,6 +134,12 @@ body {
   line-height: 1;
   transition: .3s ease;
   display: block;
+
+  @include below(sm) {
+    min-height: 60px;
+    font-size: 16px;
+    padding: 18px 20px;
+  }
 }
 
 .ui-input-field__textarea:focus {
@@ -138,7 +159,7 @@ body {
   color: rgb(255, 255, 255);
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.09);
   letter-spacing: 0.1em;
-  line-height: 22px;
+  line-height: 1;
   font-weight: bold;
   text-transform: uppercase;
   padding: 25px 40px;
@@ -154,6 +175,11 @@ body {
   &:hover {
     background-image: linear-gradient(to bottom, #ff7400 0%, #d76200 100%);
     box-shadow: 4.286px 2.575px 9px 0px rgba(238, 111, 5, 0.48);
+  }
+
+  @include below(sm) {
+    font-size: 18px;
+    padding: 20px;
   }
 }
 
