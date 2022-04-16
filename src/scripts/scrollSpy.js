@@ -28,7 +28,7 @@ const onScroll = () => {
       links.forEach((link) => {
         link.classList.remove('active')
 
-        if (link.hash === `#${sections[i].id}`) {
+        if (link.hash === `#${i}`) {
           link.classList.add('active')
         }
       })
