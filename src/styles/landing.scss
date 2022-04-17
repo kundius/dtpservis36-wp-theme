@@ -1,3 +1,37 @@
 .section-for-bg {
+  position: relative;
+}
 
+.section-for-bg__pattern {
+  position: absolute;
+  width: 1920px;
+  height: 1687px;
+  background: url('../images/bg-patern.png') no-repeat 50% 50%;
+  background-size: cover;
+  top: -17px;
+  left: 50%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.section-for-bg__pattern::before {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 100%;
+  top: 0;
+  height: 655px;
+  width: 100vw;
+  background-color: #f8f8f8;
+}
+
+.section-for-bg__pattern::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 100%;
+  bottom: 0;
+  height: 872px;
+  width: 100vw;
+  background-color: #f8f8f8;
 }

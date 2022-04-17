@@ -133,6 +133,7 @@ Template Name: Главная
       </section>
 
       <div class="section-for-bg">
+        <div class="section-for-bg__pattern"></div>
         <section class="additional">
           <div class="ui-container">
             <div class="additional__title">Кроме того, выполняем:</div>
