@@ -275,6 +275,8 @@
   position: absolute;
   background: #919191;
   transition: .3s ease;
+  top: 50%;
+  left: 50%;
 
   .scroll-up:hover & {
     background: #000;
@@ -285,8 +287,8 @@
   width: 6px;
   height: 21px;
   border-radius: 3px;
-  top: 30px;
-  left: 35px;
+  margin: 3px 0 0 0;
+  transform: translate(-50%, -50%);
 
   .scroll-up:hover & {
     height: 25px;
@@ -297,10 +299,9 @@
 .scroll-up span:nth-child(2) {
   width: 6px;
   height: 17px;
-  transform: rotate(45deg);
-  top: 24px;
-  left: 30px;
   border-radius: 0 0 3px 3px;
+  margin: -5px 0 0 -4px;
+  transform: translate(-50%, -50%) rotate(45deg);
 
   .scroll-up:hover & {
     top: 10px;
@@ -310,10 +311,9 @@
 .scroll-up span:nth-child(3) {
   width: 6px;
   height: 17px;
-  transform: rotate(-45deg);
-  top: 24px;
-  left: 39px;
   border-radius: 0 0 3px 3px;
+  margin: -5px 0px 0 4px;
+  transform: translate(-50%, -50%) rotate(-45deg);
 
   .scroll-up:hover & {
     top: 10px;
@@ -323,33 +323,31 @@
 .scroll-up span:nth-child(4) {
   width: 6px;
   height: 6px;
-  left: 35px;
   border-radius: 3px;
-  top: 54px;
+  transform: translate(-50%, -50%);
+  margin: 20px 0 0 0;
 }
 
 .scroll-up span:nth-child(5) {
   width: 6px;
   height: 6px;
-  left: 35px;
   border-radius: 3px;
-  top: 44px;
-  transform: scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  margin: 20px 0 0 0;
 
   .scroll-up:hover & {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
 .scroll-up span:nth-child(6) {
   width: 4px;
   height: 4px;
-  left: 36px;
   border-radius: 3px;
-  top: 62px;
-  transform: scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  margin: 20px 0 0 0;
 
   .scroll-up:hover & {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
