@@ -285,11 +285,6 @@
   border-radius: 3px;
   margin: 3px 0 0 0;
   transform: translate(-50%, -50%);
-
-  .scroll-up:hover & {
-    height: 25px;
-    top: 16px;
-  }
 }
 
 .scroll-up span:nth-child(2) {
@@ -298,10 +293,6 @@
   border-radius: 0 0 3px 3px;
   margin: -5px 0 0 -4px;
   transform: translate(-50%, -50%) rotate(45deg);
-
-  .scroll-up:hover & {
-    top: 10px;
-  }
 }
 
 .scroll-up span:nth-child(3) {
@@ -310,10 +301,6 @@
   border-radius: 0 0 3px 3px;
   margin: -5px 0px 0 4px;
   transform: translate(-50%, -50%) rotate(-45deg);
-
-  .scroll-up:hover & {
-    top: 10px;
-  }
 }
 
 .scroll-up span:nth-child(4) {
@@ -330,10 +317,6 @@
   border-radius: 3px;
   transform: translate(-50%, -50%) scale(0);
   margin: 20px 0 0 0;
-
-  .scroll-up:hover & {
-    transform: translate(-50%, -50%) scale(1);
-  }
 }
 
 .scroll-up span:nth-child(6) {
@@ -342,12 +325,32 @@
   border-radius: 3px;
   transform: translate(-50%, -50%) scale(0);
   margin: 20px 0 0 0;
-
-  .scroll-up:hover & {
-    transform: translate(-50%, -50%) scale(1);
-  }
 }
 
 .scroll-up:hover span {
   background: #000;
+}
+
+.scroll-up:hover span:nth-child(1) {
+  height: 25px;
+  top: 16px;
+}
+
+.scroll-up:hover span:nth-child(2) {
+  top: 10px;
+}
+
+.scroll-up:hover span:nth-child(3) {
+  top: 10px;
+}
+
+.scroll-up:hover span:nth-child(4) {
+}
+
+.scroll-up:hover span:nth-child(5) {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.scroll-up:hover span:nth-child(6) {
+  transform: translate(-50%, -50%) scale(1);
 }
