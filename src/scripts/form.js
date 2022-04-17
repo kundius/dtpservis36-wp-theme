@@ -6,7 +6,7 @@ document.querySelectorAll(".js-form").forEach(function (form) {
   let messages = [];
 
   const removeErrors = () => {
-    controlWrapElements.forEach((el) => el.classList.remove("_error"));
+    controlWrapElements.forEach((el) => el.classList.remove("error"));
   };
 
   const removeMessages = () => {
@@ -20,7 +20,7 @@ document.querySelectorAll(".js-form").forEach(function (form) {
 
   const renderMessage = (selector, message) => {
     const el = form.querySelector(selector);
-    el.classList.add("_error");
+    el.classList.add("error");
     const messageEl = document.createElement("span");
     messageEl.classList.add("ui-form-error");
     messageEl.innerHTML = message;
