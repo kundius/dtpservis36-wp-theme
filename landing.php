@@ -60,12 +60,12 @@ Template Name: Главная
                   <div class="intro-form-result__head">
                     <div class="intro-form-result__head-icon"></div>
                     <div class="intro-form-result__head-title">
-                      Ваше заявка успешно отправлена
+                      Ваша заявка успешно отправлена
                     </div>
                   </div>
                   <div class="intro-form-result__body">
                     <div class="intro-form-result__body-text">
-                      ВЧерез 2 минуты мы Вам перезвоним
+                      Через 2 минуты мы Вам перезвоним
                     </div>
                     <div class="intro-form-result__body-close wpcf7-form-status-reset">
                       Закрыть окно
