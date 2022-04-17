@@ -307,113 +307,113 @@ Template Name: Главная
             </div>
           </div>
         </div>
-      </div>
       
-      <?php $contacts = get_field('theme_contacts_items', 'options') ?>
-      <section class="section-contacts" data-scrollspy-section id="contacts">
-        <div class="section-contacts__bg-pattern"></div>
+        <?php $contacts = get_field('theme_contacts_items', 'options') ?>
+        <section class="section-contacts" data-scrollspy-section id="contacts">
+          <div class="section-contacts__bg-pattern"></div>
 
-        <div class="ui-container">
-          <div class="section-contacts__title">Контакты</div>
+          <div class="ui-container">
+            <div class="section-contacts__title">Контакты</div>
 
-          <div class="contacts-body">
-            <div class="contacts-body__groups">
-              <?php foreach ($contacts as $contact): ?>
-              <div class="contacts-group">
-                <div class="contacts-group__title">
-                  <?php echo $contact['title'] ?>
-                </div>
-                <div class="contacts-group__address">
-                  <?php echo $contact['address'] ?>
-                </div>
-                <div class="contacts-group__data">
-                  <?php foreach ($contact['data'] as $data): ?>
-                  <div class="contacts-group__data-item contacts-group__data-item_<?php echo $data['type'] ?>">
-                    <?php
-                      if ($data['type'] === 'email') {
-                        echo '<a href="mailto:' . $data['value'] . '">' . $data['value'] . '</a>';
-                      } else if ($data['type'] === 'phone') {
-                        echo '<a href="tel:' . $data['value'] . '">' . $data['value'] . '</a>';
-                      } else {
-                        echo $data['value'];
-                      }
-                    ?>
+            <div class="contacts-body">
+              <div class="contacts-body__groups">
+                <?php foreach ($contacts as $contact): ?>
+                <div class="contacts-group">
+                  <div class="contacts-group__title">
+                    <?php echo $contact['title'] ?>
                   </div>
-                  <?php endforeach; ?>
+                  <div class="contacts-group__address">
+                    <?php echo $contact['address'] ?>
+                  </div>
+                  <div class="contacts-group__data">
+                    <?php foreach ($contact['data'] as $data): ?>
+                    <div class="contacts-group__data-item contacts-group__data-item_<?php echo $data['type'] ?>">
+                      <?php
+                        if ($data['type'] === 'email') {
+                          echo '<a href="mailto:' . $data['value'] . '">' . $data['value'] . '</a>';
+                        } else if ($data['type'] === 'phone') {
+                          echo '<a href="tel:' . $data['value'] . '">' . $data['value'] . '</a>';
+                        } else {
+                          echo $data['value'];
+                        }
+                      ?>
+                    </div>
+                    <?php endforeach; ?>
+                  </div>
+                </div>
+                <?php endforeach; ?>
+              </div>
+
+              <div class="contacts-body__title">
+                Обратная связь
+              </div>
+            </div>
+
+            <form action="/wp-json/contact-form-7/v1/contact-forms/36/feedback" method="post" class="contacts-form js-form">
+              <div class="contacts-form__process">
+                <div class="contacts-form__input">
+                  <span class="wpcf7-form-control-wrap your-phone">
+                    <label class="ui-input-field">
+                      <input
+                        type="text"
+                        class="ui-input-field__input"
+                        name="your-phone"
+                        data-inputmask="'mask': '+7 (999) 999-99-99'"
+                        placeholder="+7 (___) ___-__-__"
+                      />
+                      <span class="ui-input-field__label">Введите ваш номер телефона</span>
+                    </label>
+                  </span>
+                </div>
+                <div class="contacts-form__submit">
+                  <button class="ui-button-secondary" type="submit">
+                    Хочу проконсультироваться
+                  </button>
                 </div>
               </div>
-              <?php endforeach; ?>
-            </div>
 
-            <div class="contacts-body__title">
-              Обратная связь
-            </div>
+              <div class="contacts-form__success">
+                <div class="contacts-form-result contacts-form-result_success">
+                  <div class="contacts-form-result__head">
+                    <div class="contacts-form-result__head-icon"></div>
+                    <div class="contacts-form-result__head-title">
+                      Ваша заявка успешно отправлена
+                    </div>
+                  </div>
+                  <div class="contacts-form-result__body">
+                    <div class="contacts-form-result__body-text">
+                      Через 2 минуты мы Вам перезвоним
+                    </div>
+                    <div class="contacts-form-result__body-close wpcf7-form-status-reset">
+                      Закрыть окно
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contacts-form__failure">
+                <div class="contacts-form-result contacts-form-result_failed">
+                  <div class="contacts-form-result__head">
+                    <div class="contacts-form-result__head-icon"></div>
+                    <div class="contacts-form-result__head-title">
+                      Возникла ошибка
+                    </div>
+                  </div>
+                  <div class="contacts-form-result__body">
+                    <div class="contacts-form-result__body-text">
+                      Не удалось отправить сообщение
+                    </div>
+                    <div class="contacts-form-result__body-close wpcf7-form-status-reset">
+                      Закрыть окно
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+
           </div>
-
-          <form action="/wp-json/contact-form-7/v1/contact-forms/36/feedback" method="post" class="contacts-form js-form">
-            <div class="contacts-form__process">
-              <div class="contacts-form__input">
-                <span class="wpcf7-form-control-wrap your-phone">
-                  <label class="ui-input-field">
-                    <input
-                      type="text"
-                      class="ui-input-field__input"
-                      name="your-phone"
-                      data-inputmask="'mask': '+7 (999) 999-99-99'"
-                      placeholder="+7 (___) ___-__-__"
-                    />
-                    <span class="ui-input-field__label">Введите ваш номер телефона</span>
-                  </label>
-                </span>
-              </div>
-              <div class="contacts-form__submit">
-                <button class="ui-button-secondary" type="submit">
-                  Хочу проконсультироваться
-                </button>
-              </div>
-            </div>
-
-            <div class="contacts-form__success">
-              <div class="contacts-form-result contacts-form-result_success">
-                <div class="contacts-form-result__head">
-                  <div class="contacts-form-result__head-icon"></div>
-                  <div class="contacts-form-result__head-title">
-                    Ваша заявка успешно отправлена
-                  </div>
-                </div>
-                <div class="contacts-form-result__body">
-                  <div class="contacts-form-result__body-text">
-                    Через 2 минуты мы Вам перезвоним
-                  </div>
-                  <div class="contacts-form-result__body-close wpcf7-form-status-reset">
-                    Закрыть окно
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="contacts-form__failure">
-              <div class="contacts-form-result contacts-form-result_failed">
-                <div class="contacts-form-result__head">
-                  <div class="contacts-form-result__head-icon"></div>
-                  <div class="contacts-form-result__head-title">
-                    Возникла ошибка
-                  </div>
-                </div>
-                <div class="contacts-form-result__body">
-                  <div class="contacts-form-result__body-text">
-                    Не удалось отправить сообщение
-                  </div>
-                  <div class="contacts-form-result__body-close wpcf7-form-status-reset">
-                    Закрыть окно
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-
-        </div>
-      </section>
+        </section>
+      </div>
 
       <?php get_template_part('partials/footer') ?>
     </div>
