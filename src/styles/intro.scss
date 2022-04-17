@@ -132,6 +132,7 @@
 
 .intro-form__process {
   padding-top: 45px;
+  max-width: calc(100% - 16px);
 
   ._mail-sent & {
     display: none;
@@ -156,7 +157,7 @@
 
 .intro-form__input {
   width: 360px;
-  max-width: calc(100% - 16px);
+  max-width: 100%;
   
   .ui-input-phone {
     width: 100%;
@@ -167,7 +168,7 @@
   margin-top: 18px;
   width: 360px;
   position: relative;
-  max-width: calc(100% - 16px);
+  max-width: 100%;
   
   .ui-button-primary {
     width: 100%;
