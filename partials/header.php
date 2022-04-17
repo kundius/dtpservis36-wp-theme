@@ -25,7 +25,7 @@
     </ul>
     <div class="header__sep-2"></div>
     <div class="header__phone">
-      <a href="tel:" class="header__phone-number">+7 (950) 771-1-911</a>
+      <a href="tel:<?php the_field('theme_phone', 'options') ?>" class="header__phone-number"><?php the_field('theme_phone', 'options') ?></a>
       <div class="header__phone-time">круглосуточно, без выходных</div>
     </div>
   </div>
@@ -34,7 +34,7 @@
 <div class="header-placeholder"></div>
 
 <div class="messengers">
-  <a href="tel:" class="messengers__item messengers__item_phone"></a>
-  <a href="tel:" class="messengers__item messengers__item_viber"></a>
-  <a href="tel:" class="messengers__item messengers__item_whatsapp"></a>
+  <a href="tel:<?php the_field('theme_phone', 'options') ?>" class="messengers__item messengers__item_phone"></a>
+  <a href="viber://add?number=<?php the_field('theme_viber', 'options') ?>" class="messengers__item messengers__item_viber"></a>
+  <a href="whatsapp://send?text=Hello&phone=<?php the_field('theme_whatsapp', 'options') ?>" class="messengers__item messengers__item_whatsapp"></a>
 </div>

@@ -16,16 +16,14 @@
         </li>
       </ul>
 
-      <a href="tel:" class="footer__phone">
-        +7 (950) 771-1-911
+      <a href="tel:<?php the_field('theme_phone', 'options') ?>" class="footer__phone">
+      <?php the_field('theme_phone', 'options') ?>
         <span class="footer__phone-icon"></span>
       </a>
     </div>
     <div class="footer__secondary">
       <div class="footer__copyright">
-        ©2006-2022, <strong>Сервис ДТП</strong> Оформление ДТП в Воронеже
-        <span>Аварийные комиссары</span> <span>Выезд на место аварии за 5 минут</span>
-        Все права защищены.
+        <?php the_field('theme_copyright', 'options') ?>
       </div>
       <ul class="footer__links">
         <li>
@@ -37,7 +35,7 @@
       </ul>
       <div class="footer__counters">
         <div class="footer__counters-item">
-        counters
+          <?php the_field('theme_counters', 'options') ?>
         </div>
         <div class="footer__counters-item">
           <a href="https://domenart-studio.ru/" class="footer-creator" target="_blank">
