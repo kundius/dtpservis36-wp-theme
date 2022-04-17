@@ -272,5 +272,34 @@
 }
 
 .scroll-up span {
+  position: absolute;
+  background: #919191;
+}
+
+.scroll-up span:nth-child(1) {
+  width: 6px;
+  height: 28px;
+}
+
+.scroll-up span:nth-child(2) {
+  width: 6px;
+  height: 14px;
+}
+
+.scroll-up span:nth-child(3) {
+  width: 6px;
+  height: 14px;
+}
+
+.scroll-up span:nth-child(4) {
+  width: 6px;
+  height: 6px;
+}
+
+.scroll-up span:nth-child(5) {
+  
+}
+
+.scroll-up span:nth-child(6) {
   
 }
