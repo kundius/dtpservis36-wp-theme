@@ -58,79 +58,81 @@
         Оставить отзыв
       </div>
 
-      <form action="/wp-json/contact-form-7/v1/contact-forms/12/feedback" method="post" class="modal-form js-form">
-        <div class="modal-form__field">
-          <label class="ui-input-field">
-            <input
-              type="text"
-              class="ui-input-field__input"
-              name="your-name"
-            />
-            <span class="ui-input-field__label">Ваше имя</span>
-          </label>
-        </div>
-
-        <div class="modal-form__field">
-          <label class="ui-input-field">
-            <input
-              type="text"
-              class="ui-input-field__input"
-              name="your-date"
-            />
-            <span class="ui-input-field__label">Дата</span>
-          </label>
-        </div>
-
-        <div class="modal-form__field">
-          <span class="wpcf7-form-control-wrap your-email">
+      <form action="/wp-json/contact-form-7/v1/contact-forms/37/feedback" method="post" class="modal-form js-form">
+        <div class="modal-form__process">
+          <div class="modal-form__field">
             <label class="ui-input-field">
               <input
-                type="email"
+                type="text"
                 class="ui-input-field__input"
-                name="your-email"
+                name="your-name"
               />
-              <span class="ui-input-field__label">Ваш e-mail*</span>
+              <span class="ui-input-field__label">Ваше имя</span>
             </label>
-          </span>
-        </div>
+          </div>
 
-        <div class="modal-form__field">
-          <span class="wpcf7-form-control-wrap your-message">
+          <div class="modal-form__field">
             <label class="ui-input-field">
-              <textarea
-                rows="4"
-                name="your-message"
-                class="ui-input-field__textarea"
-              ></textarea>
-              <span class="ui-input-field__label">Ваш отзыв*</span>
+              <input
+                type="text"
+                class="ui-input-field__input"
+                name="your-date"
+              />
+              <span class="ui-input-field__label">Дата</span>
             </label>
-          </span>
-        </div>
+          </div>
 
-        <div class="modal-form__file">
-          <span class="wpcf7-form-control-wrap your-file">
-            <div class="ui-input-file">
-              <div class="ui-input-file__icon">
-                <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19.463 5.576c-.688-.75-1.929-.796-2.756.031l-8.1 8.1c-.21.21-.21.476 0 .686.21.21.476.21.686 0l6.7-6.7a1 1 0 0 1 1.414 1.414l-6.7 6.7a2.45 2.45 0 0 1-3.514 0 2.45 2.45 0 0 1 0-3.514l8.1-8.1c1.567-1.568 4.115-1.619 5.63.015 1.552 1.569 1.597 4.104-.03 5.613l-9.486 9.486c-2.19 2.19-5.624 2.19-7.814 0-2.19-2.19-2.19-5.624 0-7.814l8.1-8.1a1 1 0 0 1 1.414 1.414l-8.1 8.1c-1.41 1.41-1.41 3.576 0 4.986 1.41 1.41 3.576 1.41 4.986 0l9.5-9.5.031-.03c.75-.687.796-1.929-.031-2.756l-.03-.031z" />
-                </svg>
+          <div class="modal-form__field">
+            <span class="wpcf7-form-control-wrap your-email">
+              <label class="ui-input-field">
+                <input
+                  type="email"
+                  class="ui-input-field__input"
+                  name="your-email"
+                />
+                <span class="ui-input-field__label">Ваш e-mail*</span>
+              </label>
+            </span>
+          </div>
+
+          <div class="modal-form__field">
+            <span class="wpcf7-form-control-wrap your-message">
+              <label class="ui-input-field">
+                <textarea
+                  rows="4"
+                  name="your-message"
+                  class="ui-input-field__textarea"
+                ></textarea>
+                <span class="ui-input-field__label">Ваш отзыв*</span>
+              </label>
+            </span>
+          </div>
+
+          <div class="modal-form__file">
+            <span class="wpcf7-form-control-wrap your-file">
+              <div class="ui-input-file">
+                <div class="ui-input-file__icon">
+                  <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.463 5.576c-.688-.75-1.929-.796-2.756.031l-8.1 8.1c-.21.21-.21.476 0 .686.21.21.476.21.686 0l6.7-6.7a1 1 0 0 1 1.414 1.414l-6.7 6.7a2.45 2.45 0 0 1-3.514 0 2.45 2.45 0 0 1 0-3.514l8.1-8.1c1.567-1.568 4.115-1.619 5.63.015 1.552 1.569 1.597 4.104-.03 5.613l-9.486 9.486c-2.19 2.19-5.624 2.19-7.814 0-2.19-2.19-2.19-5.624 0-7.814l8.1-8.1a1 1 0 0 1 1.414 1.414l-8.1 8.1c-1.41 1.41-1.41 3.576 0 4.986 1.41 1.41 3.576 1.41 4.986 0l9.5-9.5.031-.03c.75-.687.796-1.929-.031-2.756l-.03-.031z" />
+                  </svg>
+                </div>
+                <div class="ui-input-file__label">Прикрепить файл</div>
+                <div class="ui-input-file__desc">(не более 30 Мб)</div>
+                <input type="file" name="your-file" class="ui-input-file__input" />
               </div>
-              <div class="ui-input-file__label">Прикрепить файл</div>
-              <div class="ui-input-file__desc">(не более 30 Мб)</div>
-              <input type="file" name="your-file" class="ui-input-file__input" />
-            </div>
-          </span>
-        </div>
+            </span>
+          </div>
 
-        <div class="modal-form__note">
-          Поля, отмеченные *, обязательны для заполнения
-        </div>
+          <div class="modal-form__note">
+            Поля, отмеченные *, обязательны для заполнения
+          </div>
 
-        <div class="modal-form__submit">
-          <button type="submit" class="ui-button-secondary">
-            <span class="ui-loader-square modal-form__loader"></span>
-            Отправить отзыв
-          </button>
+          <div class="modal-form__submit">
+            <button type="submit" class="ui-button-secondary">
+              <span class="ui-loader-square modal-form__loader"></span>
+              Отправить отзыв
+            </button>
+          </div>
         </div>
 
         <div class="modal-form__success">

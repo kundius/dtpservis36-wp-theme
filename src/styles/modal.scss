@@ -220,12 +220,17 @@
   }
 }
 
+.modal-form__process {
+  display: block;
+  ._mail-sent & {
+    display: none;
+  }
+  ._mail-failed & {
+    display: none;
+  }
+}
+
 .modal-form__success {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
   display: none;
   ._mail-sent & {
     display: block;
@@ -233,11 +238,6 @@
 }
 
 .modal-form__failed {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
   display: none;
   ._mail-failed & {
     display: block;
@@ -245,33 +245,38 @@
 }
 
 .modal-form-result {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-form-result__head {
-  background: #2e82b9;
   display: flex;
   align-items: center;
-  padding: 40px 20px;
-  .modal-form-result_success & {
-    background: #2e82b9;
-  }
-  .modal-form-result_failed & {
-    background: #e48a00;
-  }
 }
 
 .modal-form-result__head-icon {
-  width: 54px;
-  height: 54px;
+  width: 64px;
+  height: 64px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: url('../images/bg-icon-result.jpg') no-repeat 50% 50%;
+  background: #2e82b9;
   background-size: cover;
   position: relative;
-  margin-right: 20px;
+  margin-right: 25px;
+
+  .modal-form-result_success & {
+    background: #2e82b9;
+  }
+
+  .modal-form-result_failed & {
+    background: #e48a00;
+  }
+
+  @include below(sm) {
+    margin-right: 16px;
+  }
 }
 
 .modal-form-result__head-icon::before {
@@ -289,21 +294,31 @@
 }
 
 .modal-form-result__head-title {
-  font-size: 20px;
-  color: #fff;
+  font-size: 24px;
+  color: #2e82b9;
   font-weight: 700;
   line-height: 1.2;
   text-align: left;
-  text-shadow: 0 2px 5px rgb(0 0 0 / 44%);
+
+  .modal-form-result_success & {
+    color: #2e82b9;
+  }
+
+  .modal-form-result_failed & {
+    color: #e48a00;
+  }
+
+  @include below(sm) {
+    font-size: 20px;
+  }
 }
 
 .modal-form-result__body {
-  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
   flex-grow: 1;
+  margin-top: 28px;
 }
 
 .modal-form-result__body-text {
@@ -311,19 +326,20 @@
   line-height: 1.25;
   color: #333;
   text-align: center;
+  letter-spacing: 0.025em;
 }
 
 .modal-form-result__body-close {
-  margin-top: 40px;
+  margin-top: 27px;
   line-height: 34px;
   font-size: 16px;
   padding: 0 20px;
   white-space: nowrap;
   border-radius: 18px;
-  color: #2d76a6;
+  color: #565656;
   cursor: pointer;
   border: 1px solid currentColor;
   &:hover {
-    color: #faaf00;
+    color: #2d76a6;
   }
 }
