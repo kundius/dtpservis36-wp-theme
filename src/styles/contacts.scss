@@ -195,9 +195,7 @@
 .contacts-form__success {
   display: none;
   width: 100%;
-  border-top: 1px solid #e6e6e6;
   padding-top: 20px;
-  margin-top: 8px;
 
   ._mail-sent & {
     display: block;
@@ -211,9 +209,7 @@
 .contacts-form__failure {
   display: none;
   width: 100%;
-  border-top: 1px solid #e6e6e6;
   padding-top: 20px;
-  margin-top: 8px;
 
   ._mail-failure & {
     display: block;
