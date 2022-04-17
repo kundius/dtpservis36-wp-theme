@@ -12,6 +12,7 @@ import "./ripple";
 import "./inputMask";
 import "./inputField";
 import "./reviews";
+import "./scrollUp";
 
 /**
  * LazySizes configuration
