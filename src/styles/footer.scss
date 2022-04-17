@@ -277,10 +277,6 @@
   transition: .3s ease;
   top: 50%;
   left: 50%;
-
-  .scroll-up:hover & {
-    background: #000;
-  }
 }
 
 .scroll-up span:nth-child(1) {
@@ -350,4 +346,8 @@
   .scroll-up:hover & {
     transform: translate(-50%, -50%) scale(1);
   }
+}
+
+.scroll-up:hover span {
+  background: #000;
 }
