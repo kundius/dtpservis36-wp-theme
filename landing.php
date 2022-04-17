@@ -36,16 +36,18 @@ Template Name: Главная
               </div>
               <div class="intro-form__process">
                 <div class="intro-form__input">
-                  <label class="ui-input-field">
-                    <input
-                      type="text"
-                      class="ui-input-field__input"
-                      name="your-phone"
-                      data-inputmask="'mask': '+7 (999) 999-99-99'"
-                      placeholder="+7 (___) ___-__-__"
-                    />
-                    <span class="ui-input-field__label">Введите ваш номер телефона</span>
-                  </label>
+                  <span class="wpcf7-form-control-wrap your-phone">
+                    <label class="ui-input-field">
+                      <input
+                        type="text"
+                        class="ui-input-field__input"
+                        name="your-phone"
+                        data-inputmask="'mask': '+7 (999) 999-99-99'"
+                        placeholder="+7 (___) ___-__-__"
+                      />
+                      <span class="ui-input-field__label">Введите ваш номер телефона</span>
+                    </label>
+                  </span>
                 </div>
                 <div class="intro-form__submit">
                   <button class="ui-button-primary" type="button">
