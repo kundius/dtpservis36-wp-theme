@@ -309,6 +309,10 @@
   .intro-form-result_failed & {
     background: #e48a00;
   }
+
+  @include below(sm) {
+    margin-right: 16px;
+  }
 }
 
 .intro-form-result__head-icon::before {
@@ -331,6 +335,18 @@
   font-weight: 700;
   line-height: 1.2;
   text-align: left;
+
+  .intro-form-result_success & {
+    color: #2e82b9;
+  }
+
+  .intro-form-result_failed & {
+    color: #e48a00;
+  }
+
+  @include below(sm) {
+    font-size: 20px;
+  }
 }
 
 .intro-form-result__body {

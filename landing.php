@@ -26,7 +26,7 @@ Template Name: Главная
           </div>
 
           <div class="intro__body">
-            <form class="intro-form _mail-sent">
+            <form class="intro-form">
               <div class="intro-form__title">
                 <span>Оформление ДТП</span>
                 в Воронеже
@@ -84,8 +84,7 @@ Template Name: Главная
                   </div>
                   <div class="intro-form-result__body">
                     <div class="intro-form-result__body-text">
-                      Не удалось<br>
-                      отправить сообщение
+                      Не удалось отправить сообщение
                     </div>
                     <div class="intro-form-result__body-close wpcf7-form-status-reset">
                       Закрыть окно
