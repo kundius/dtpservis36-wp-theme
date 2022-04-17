@@ -26,7 +26,7 @@ Template Name: Главная
           </div>
 
           <div class="intro__body">
-            <div class="intro-form">
+            <form class="intro-form _mail-sent">
               <div class="intro-form__title">
                 <span>Оформление ДТП</span>
                 в Воронеже
@@ -93,7 +93,7 @@ Template Name: Главная
                   </div>
                 </div>
               </div>
-            </div>
+            </form>
 
             <div class="intro__urgent">
               Срочно!!!
