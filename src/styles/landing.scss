@@ -11,7 +11,8 @@
   background-size: cover;
   top: -17px;
   left: 50%;
-  z-index: 2;
+  transform: translateX(-50%);
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -32,7 +33,7 @@
   display: block;
   left: 100%;
   bottom: 0;
-  height: 872px;
+  height: 972px;
   width: 100vw;
   background-color: #f8f8f8;
 }
