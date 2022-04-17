@@ -31,9 +31,11 @@ Template Name: Главная
                 <span>Оформление ДТП</span>
                 в Воронеже
               </div>
+
               <div class="intro-form__desc">
                 Служба аварийных комиссаров
               </div>
+
               <div class="intro-form__process">
                 <div class="intro-form__input">
                   <span class="wpcf7-form-control-wrap your-phone">
@@ -50,7 +52,7 @@ Template Name: Главная
                   </span>
                 </div>
                 <div class="intro-form__submit">
-                  <button class="ui-button-primary">
+                  <button class="ui-button-primary" type="submit">
                     Вызвать комиссара
                     <span class="ui-button-primary__call"></span>
                   </button>
@@ -347,23 +349,65 @@ Template Name: Главная
             </div>
           </div>
 
-          <form class="contacts-form">
-            <div class="contacts-form__input">
-              <label class="ui-input-field">
-                <input
-                  type="text"
-                  class="ui-input-field__input"
-                  name="your-phone"
-                  data-inputmask="'mask': '+7 (999) 999-99-99'"
-                  placeholder="+7 (___) ___-__-__"
-                />
-                <span class="ui-input-field__label">Введите ваш номер телефона</span>
-              </label>
+          <form action="/wp-json/contact-form-7/v1/contact-forms/36/feedback" method="post" class="contacts-form js-form">
+            <div class="contacts-form__process">
+              <div class="contacts-form__input">
+                <span class="wpcf7-form-control-wrap your-phone">
+                  <label class="ui-input-field">
+                    <input
+                      type="text"
+                      class="ui-input-field__input"
+                      name="your-phone"
+                      data-inputmask="'mask': '+7 (999) 999-99-99'"
+                      placeholder="+7 (___) ___-__-__"
+                    />
+                    <span class="ui-input-field__label">Введите ваш номер телефона</span>
+                  </label>
+                </span>
+              </div>
+              <div class="contacts-form__submit">
+                <button class="ui-button-secondary" type="submit">
+                  Хочу проконсультироваться
+                </button>
+              </div>
             </div>
-            <div class="contacts-form__submit">
-              <button class="ui-button-secondary">
-                Хочу проконсультироваться
-              </button>
+
+            <div class="contacts-form__success">
+              <div class="contacts-form-result contacts-form-result_success">
+                <div class="contacts-form-result__head">
+                  <div class="contacts-form-result__head-icon"></div>
+                  <div class="contacts-form-result__head-title">
+                    Ваша заявка успешно отправлена
+                  </div>
+                </div>
+                <div class="contacts-form-result__body">
+                  <div class="contacts-form-result__body-text">
+                    Через 2 минуты мы Вам перезвоним
+                  </div>
+                  <div class="contacts-form-result__body-close wpcf7-form-status-reset">
+                    Закрыть окно
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contacts-form__failure">
+              <div class="contacts-form-result contacts-form-result_failed">
+                <div class="contacts-form-result__head">
+                  <div class="contacts-form-result__head-icon"></div>
+                  <div class="contacts-form-result__head-title">
+                    Возникла ошибка
+                  </div>
+                </div>
+                <div class="contacts-form-result__body">
+                  <div class="contacts-form-result__body-text">
+                    Не удалось отправить сообщение
+                  </div>
+                  <div class="contacts-form-result__body-close wpcf7-form-status-reset">
+                    Закрыть окно
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
 
