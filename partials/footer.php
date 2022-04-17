@@ -47,6 +47,15 @@
   </div>
 </footer>
 
+<button class="scroll-up">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
 <div class="hystmodal hystmodal--small" id="modal-review-form" aria-hidden="true">
   <div class="hystmodal__wrap">
     <div class="hystmodal__window" role="dialog" aria-modal="true">
