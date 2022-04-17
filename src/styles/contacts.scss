@@ -227,6 +227,8 @@
 .contacts-form__input {
   width: 360px;
   max-width: calc(100% - 16px);
+  margin-left: auto;
+  margin-right: auto;
   
   .ui-input-phone {
     width: 100%;
@@ -238,6 +240,8 @@
   width: 360px;
   position: relative;
   max-width: calc(100% - 16px);
+  margin-left: auto;
+  margin-right: auto;
   
   .ui-button-secondary {
     width: 100%;
