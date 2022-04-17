@@ -26,7 +26,7 @@ Template Name: Главная
           </div>
 
           <div class="intro__body">
-            <form class="intro-form">
+            <form action="/wp-json/contact-form-7/v1/contact-forms/36/feedback" method="post" class="intro-form js-form">
               <div class="intro-form__title">
                 <span>Оформление ДТП</span>
                 в Воронеже
