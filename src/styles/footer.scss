@@ -274,32 +274,72 @@
 .scroll-up span {
   position: absolute;
   background: #919191;
+  transition: .3s ease;
+
+  &:hover & {
+    background: #000;
+  }
 }
 
 .scroll-up span:nth-child(1) {
   width: 6px;
-  height: 28px;
+  height: 21px;
+  border-radius: 3px;
+  top: 30px;
+  left: 35px;
+
+  .scroll-up:hover & {
+    height: 25px;
+    top: 16px;
+  }
 }
 
 .scroll-up span:nth-child(2) {
   width: 6px;
-  height: 14px;
+  height: 17px;
+  transform: rotate(45deg);
+  top: 24px;
+  left: 30px;
+  border-radius: 0 0 3px 3px;
+
+  .scroll-up:hover & {
+    top: 10px;
+  }
 }
 
 .scroll-up span:nth-child(3) {
   width: 6px;
-  height: 14px;
+  height: 17px;
+  transform: rotate(-45deg);
+  top: 24px;
+  left: 39px;
+  border-radius: 0 0 3px 3px;
+
+  .scroll-up:hover & {
+    top: 10px;
+  }
 }
 
 .scroll-up span:nth-child(4) {
   width: 6px;
   height: 6px;
+  left: 35px;
+  border-radius: 3px;
+  top: 54px;
 }
 
 .scroll-up span:nth-child(5) {
-  
+  width: 6px;
+  height: 6px;
+  left: 35px;
+  border-radius: 3px;
+  top: 44px;
 }
 
 .scroll-up span:nth-child(6) {
-  
+  width: 4px;
+  height: 4px;
+  left: 36px;
+  border-radius: 3px;
+  top: 62px;
 }
