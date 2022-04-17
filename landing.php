@@ -50,7 +50,7 @@ Template Name: Главная
                   </span>
                 </div>
                 <div class="intro-form__submit">
-                  <button class="ui-button-primary" type="button">
+                  <button class="ui-button-primary">
                     Вызвать комиссара
                     <span class="ui-button-primary__call"></span>
                   </button>
@@ -361,7 +361,7 @@ Template Name: Главная
               </label>
             </div>
             <div class="contacts-form__submit">
-              <button class="ui-button-secondary" type="button">
+              <button class="ui-button-secondary">
                 Хочу проконсультироваться
               </button>
             </div>
