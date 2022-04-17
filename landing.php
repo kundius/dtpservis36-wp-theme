@@ -26,7 +26,7 @@ Template Name: Главная
           </div>
 
           <div class="intro__body">
-            <form class="intro-form">
+            <div class="intro-form">
               <div class="intro-form__title">
                 <span>Оформление ДТП</span>
                 в Воронеже
@@ -34,25 +34,66 @@ Template Name: Главная
               <div class="intro-form__desc">
                 Служба аварийных комиссаров
               </div>
-              <div class="intro-form__input">
-                <label class="ui-input-field">
-                  <input
-                    type="text"
-                    class="ui-input-field__input"
-                    name="your-phone"
-                    data-inputmask="'mask': '+7 (999) 999-99-99'"
-                    placeholder="+7 (___) ___-__-__"
-                  />
-                  <span class="ui-input-field__label">Введите ваш номер телефона</span>
-                </label>
+              <div class="intro-form__process">
+                <div class="intro-form__input">
+                  <label class="ui-input-field">
+                    <input
+                      type="text"
+                      class="ui-input-field__input"
+                      name="your-phone"
+                      data-inputmask="'mask': '+7 (999) 999-99-99'"
+                      placeholder="+7 (___) ___-__-__"
+                    />
+                    <span class="ui-input-field__label">Введите ваш номер телефона</span>
+                  </label>
+                </div>
+                <div class="intro-form__submit">
+                  <button class="ui-button-primary" type="button">
+                    Вызвать комиссара
+                    <span class="ui-button-primary__call"></span>
+                  </button>
+                </div>
               </div>
-              <div class="intro-form__submit">
-                <button class="ui-button-primary" type="button">
-                  Вызвать комиссара
-                  <span class="ui-button-primary__call"></span>
-                </button>
+
+              <div class="intro-form__success">
+                <div class="intro-form-result intro-form-result_success">
+                  <div class="intro-form-result__head">
+                    <div class="intro-form-result__head-icon"></div>
+                    <div class="intro-form-result__head-title">
+                      Ваше заявка успешно отправлена
+                    </div>
+                  </div>
+                  <div class="intro-form-result__body">
+                    <div class="intro-form-result__body-text">
+                      ВЧерез 2 минуты мы Вам перезвоним
+                    </div>
+                    <div class="intro-form-result__body-close wpcf7-form-status-reset">
+                      Закрыть окно
+                    </div>
+                  </div>
+                </div>
               </div>
-            </form>
+
+              <div class="intro-form__failure">
+                <div class="intro-form-result intro-form-result_failed">
+                  <div class="intro-form-result__head">
+                    <div class="intro-form-result__head-icon"></div>
+                    <div class="intro-form-result__head-title">
+                      Возникла ошибка
+                    </div>
+                  </div>
+                  <div class="intro-form-result__body">
+                    <div class="intro-form-result__body-text">
+                      Не удалось<br>
+                      отправить сообщение
+                    </div>
+                    <div class="intro-form-result__body-close wpcf7-form-status-reset">
+                      Закрыть окно
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="intro__urgent">
               Срочно!!!
