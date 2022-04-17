@@ -316,7 +316,7 @@
   height: 6px;
   border-radius: 3px;
   transform: translate(-50%, -50%) scale(0);
-  margin: 20px 0 0 0;
+  margin: 11px 0 0 0;
 }
 
 .scroll-up span:nth-child(6) {
@@ -324,7 +324,7 @@
   height: 4px;
   border-radius: 3px;
   transform: translate(-50%, -50%) scale(0);
-  margin: 20px 0 0 0;
+  margin: 28px 0 0 0;
 }
 
 .scroll-up:hover span {
@@ -333,15 +333,15 @@
 
 .scroll-up:hover span:nth-child(1) {
   height: 25px;
-  top: 16px;
+  margin: -9px 0 0 0;
 }
 
 .scroll-up:hover span:nth-child(2) {
-  top: 10px;
+  margin: -18px 0 0 -4px;
 }
 
 .scroll-up:hover span:nth-child(3) {
-  top: 10px;
+  margin: -18px 0 3px 3px;
 }
 
 .scroll-up:hover span:nth-child(4) {
