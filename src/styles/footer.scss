@@ -231,7 +231,7 @@
 
 .scroll-up {
   position: fixed;
-  bottom: 108px;
+  bottom: 180px;
   left: calc(50% + 662px);
   display: flex;
   flex-direction: column;
@@ -269,4 +269,8 @@
     top: 60px;
     right: 8px;
   }
+}
+
+.scroll-up span {
+  
 }

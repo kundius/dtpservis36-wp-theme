@@ -35,6 +35,6 @@
 
 <div class="messengers">
   <a href="tel:<?php the_field('theme_phone', 'options') ?>" class="messengers__item messengers__item_phone"></a>
-  <a href="viber://add?number=<?php the_field('theme_viber', 'options') ?>" class="messengers__item messengers__item_viber"></a>
+  <a href="viber://add?number=<?php echo preg_replace("/[^,.0-9]/", '', the_field('theme_viber', 'options')) ?>" class="messengers__item messengers__item_viber"></a>
   <a href="whatsapp://send?text=Hello&phone=<?php the_field('theme_whatsapp', 'options') ?>" class="messengers__item messengers__item_whatsapp"></a>
 </div>
